@@ -1,14 +1,99 @@
 $font-logo-and-titles: 'Shrikhand', cursive;
 $font-text: 'Roboto', sans-serif;
-$title-band-color: #f4f4f4;
+$title-bkgnd-color: #ffff;
+$location-band-color: #eaeaea;
+$primary-bkgnd-color: #f6f6f6;
+$secondary-color: #FF79DA;
+$primary-color: #9356DC;
 
 *{
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
+    box-sizing: border-box;  
 }
 
+body {
+margin: 0 auto;
+font-family: $font-text;
+
+}
+
+header {
+background-color: $title-bkgnd-color;
+padding: 25px 0px 16px 0px;
+position: relative;
+-webkit-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
+-moz-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
+box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
+ .header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ }
+
+ .search__content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   &--text {
+     margin-left: 15px;
+     padding: 2px 0px;
+     font-family: $font-text;
+     }
+   &--grey {
+     background-color: $location-band-color;
+     }
+ }
 
 
-
-
+  .pitch {
+      
+   &__wrapper {  
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 0px 90px 0px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(67%, #f6f6f6), color-stop(100%, #f2f2f2));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0 );
+}
+   &__content {
+    text-align: center;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+    & h1 {
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 15px;
+        }
+    & h2 {
+     font-weight: 100;
+     font-size: 18px;
+     margin-bottom: 50px;
+        }
+    
+  &__btn-nos-restos {
+    border: 0px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 20px;
+    color: #ffff;
+    text-decoration: none;
+    max-width: 100%;
+    background: $secondary-color;
+    background: -moz-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, $secondary-color), color-stop(46%, $secondary-color), color-stop(100%, $primary-color));
+    background: -webkit-linear-gradient(top, $secondary-color 0%, $secondary-colors 46%, $primary-color 100%);
+    background: -o-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
+    background: -ms-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
+    background: linear-gradient(to bottom, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-color', endColorstr='$primary-color', GradientType=0 );
+    
+   }  
+ }
