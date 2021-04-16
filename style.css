@@ -81,11 +81,97 @@ header .header__logo {
   padding: 15px 20px;
   color: #ffff;
   text-decoration: none;
-  max-width: 100%;
   background: #FF79DA;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #FF79DA), color-stop(46%, #FF79DA), color-stop(100%, #9356DC));
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79d9), color-stop(46%, #ff79d9), to(#9356DC));
-  background: linear-gradient(to bottom, #ff79d9 0%, #ff79d9 46%, #9356DC 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff79d9', endColorstr='#9356DC', GradientType=0 );
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(46%, #FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
+}
+
+.choice__wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choice__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choice h1 {
+  margin-left: 5%;
+}
+
+.choice__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  row-gap: 40px;
+  gap: 50px;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.choice ol {
+  list-style-type: none;
+  /* Start counter */
+  counter-reset: list;
+}
+
+.choice li {
+  /* Increment counter on each list item */
+  counter-increment: list;
+}
+
+.choice li::before {
+  /* Use counter to display the current number */
+  content: " " counter(list) " ";
+  border-radius: 50%;
+  padding: 2px 4px;
+  width: 41px;
+  vertical-align: middle;
+  color: white;
+  background-color: #9356DC;
+  font-size: 11px;
+  position: relative;
+  right: 5%;
+}
+
+.choice__restaurant {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  border: 0px;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 30px 30px;
+  padding: 15px 45px;
+}
+
+.choice__menu {
+  padding-left: 15px;
+  text-decoration: none;
+  text-align: left;
+  position: relative;
+}
+
+.choice__deguster {
+  padding-left: 5px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.restaurants {
+  margin-top: 15em;
 }
 /*# sourceMappingURL=style.css.map */

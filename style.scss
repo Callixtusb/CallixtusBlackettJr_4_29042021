@@ -85,15 +85,112 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     padding: 15px 20px;
     color: #ffff;
     text-decoration: none;
-    max-width: 100%;
     background: $secondary-color;
-    background: -moz-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, $secondary-color), color-stop(46%, $secondary-color), color-stop(100%, $primary-color));
-    background: -webkit-linear-gradient(top, $secondary-color 0%, $secondary-colors 46%, $primary-color 100%);
-    background: -o-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
-    background: -ms-linear-gradient(top, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
-    background: linear-gradient(to bottom, $secondary-color 0%, $secondary-color 46%, $primary-color 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$secondary-color', endColorstr='$primary-color', GradientType=0 );
+    background: -moz-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #FF79DA), color-stop(46%, #FF79DA), color-stop(100%, #9356DC));
+    background: -webkit-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+    background: -o-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+    background: -ms-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+    background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
     
    }  
  }
+
+
+ .choice {
+
+   &__wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+
+    }
+
+    &__content {
+       
+       
+       margin-left: auto;
+    margin-right: auto;
+    } 
+
+     h1{
+      margin-left: 5%;
+
+     }
+
+    &__buttons {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     row-gap: 40px;
+     gap: 50px;
+     padding-left: 0px;
+     margin-top: 50px;
+     margin-bottom: 40px;
+
+    }
+
+    ol {
+     list-style-type: none;
+     
+     /* Start counter */
+     counter-reset: list;
+     
+      }
+
+      li {
+     /* Increment counter on each list item */
+     counter-increment: list;
+      }
+
+    li::before {
+     /* Use counter to display the current number */
+     content: " " counter(list) " ";
+     border-radius: 50%;
+     padding: 2px 4px;
+     width: 41px;
+     vertical-align: middle;
+     color: white;
+     background-color: $primary-color;
+     font-size: 11px;
+     position: relative;
+     right: 5%;
+    }
+
+    &__restaurant {
+     text-decoration: none;
+     color: black;
+     text-align: left;
+     border: 0px;
+     background-color: $primary-bkgnd-color;
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 45px;
+    }
+
+    &__menu {
+     padding-left: 15px;
+     text-decoration: none;
+     text-align: left;
+     position: relative;
+
+    }
+
+    &__deguster {
+     padding-left: 5px;
+     text-decoration: none;
+     text-align: left;
+    }
+
+
+ }
+
+
+ .restaurants {
+    margin-top: 15em;
+
+ }
+
+
+
