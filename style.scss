@@ -93,94 +93,125 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     background: -ms-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
     background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
-    
+    filter: drop-shadow(0px 7px 6px #0000002e);
    }  
  }
 
 
  .choice {
+  margin-top: 50px;
 
    &__wrapper {
     width: 100%;
     margin-left: auto;
     margin-right: auto; 
-
     }
 
-    &__content {
-       
-       
-       margin-left: auto;
-    margin-right: auto;
+   &__content {
+     margin-left: auto;
+     margin-right: auto;
     } 
 
      h1{
       margin-left: 5%;
+    }
 
-     }
-
-    &__buttons {
+   &__buttons {
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: space-evenly;
-     row-gap: 40px;
-     gap: 50px;
-     padding-left: 0px;
-     margin-top: 50px;
+     gap: 25px;
+     padding-left: 10px;
+     margin-top: 25px;
      margin-bottom: 40px;
-
+     width: 100%;
+     list-style-type: none;
+     // Start counter //
+     counter-reset: list;
     }
 
-    ol {
-     list-style-type: none;
-     
-     /* Start counter */
-     counter-reset: list;
-     
-      }
-
-      li {
-     /* Increment counter on each list item */
+     li {
+     // Increment counter on each list item //
      counter-increment: list;
+     filter: drop-shadow(0px 3px 6px #4444442e);
       }
 
-    li::before {
-     /* Use counter to display the current number */
+     li::before {
+     // Use counter to display the current number //
      content: " " counter(list) " ";
      border-radius: 50%;
-     padding: 2px 4px;
-     width: 41px;
+     padding: 3px 4.3px 3px 6px;
+     width: 45px;
      vertical-align: middle;
      color: white;
      background-color: $primary-color;
      font-size: 11px;
      position: relative;
-     right: 5%;
+     z-index: 99;
+     right: -3%;
     }
 
+    //Mobile phone icon//
+     .fa-mobile-alt {
+     color: #7e7e7e;
+     border: 0px;
+     background-color: $primary-bkgnd-color;
+     border-radius: 20px 0px 0px 20px;
+     padding: 20.8px 10px 21.8px 25px;
+    
+    }
+    //Mobile phone button text//
     &__restaurant {
      text-decoration: none;
      color: black;
-     text-align: left;
+     font-weight: 600;
      border: 0px;
      background-color: $primary-bkgnd-color;
-    border-radius: 30px 30px 30px 30px;
-    padding: 15px 45px;
+     border-radius: 0px 20px 20px 0px;
+     padding: 20px 55px 20px 10px;
+     margin-left: -2%;
+     
     }
-
+    //Menu icon//
+     .fa-list-ul{
+      color: #7e7e7e;
+      border: 0px;
+      background-color: $primary-bkgnd-color;
+      border-radius: 20px 0px 0px 20px;
+      padding: 21px 10px 22px 25px;
+     }
+    //Menu button text//
     &__menu {
-     padding-left: 15px;
-     text-decoration: none;
-     text-align: left;
-     position: relative;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      border: 0px;
+      background-color: $primary-bkgnd-color;
+      border-radius: 0px 20px 20px 0px;
+      padding: 20px 55px 20px 10px;
+      margin-left: -2%;
 
     }
+    //Dégustez icon
+    .fa-store{
+      color: $primary-color;
+      border: 0px;
+      background-color: #f8ebfc;
+      border-radius: 20px 0px 0px 20px;
+      padding: 21px 10px 22px 25px; 
 
+    }
+    //Dégustez button text//
     &__deguster {
-     padding-left: 5px;
-     text-decoration: none;
-     text-align: left;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      border: 0px;
+      background-color: #f8ebfc;
+      border-radius: 0px 20px 20px 0px;
+      padding: 20px 55px 20px 10px;
+      margin-left: -2%;
     }
 
 
