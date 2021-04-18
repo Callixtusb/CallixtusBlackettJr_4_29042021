@@ -218,6 +218,7 @@ header .header__logo {
   margin-right: auto;
   background-color: #f6f6f6;
   padding-top: 1.75em;
+  padding-bottom: 8em;
 }
 
 .restaurants h1 {
@@ -272,22 +273,22 @@ header .header__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #ffff;
-  padding: 10px 15px 10px 15px;
-  height: 90px;
+  padding: 20px 15px 10px 15px;
+  height: 80px;
   width: 99.9%;
   -webkit-box-shadow: 0 0 25px -15px #444444;
           box-shadow: 0 0 25px -15px #444444;
   border-radius: 0px 0px 15px 15px;
   line-height: 1.4;
-}
-
-.restaurants__palette_text {
   text-decoration: none;
   color: black;
 }
 
 .restaurants__nouveau-palette {
+  font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
   color: #008766;
@@ -295,8 +296,8 @@ header .header__logo {
   padding: .4em 1em;
   right: 1em;
   top: .1em;
-  -webkit-filter: drop-shadow(0px 12px 2px #4444442e);
-          filter: drop-shadow(0px 12px 2px #4444442e);
+  -webkit-filter: drop-shadow(0px 3px 2px #4444442e);
+          filter: drop-shadow(0px 3px 2px #4444442e);
   border-radius: 3px 3px 3px 3px;
 }
 
@@ -314,24 +315,38 @@ header .header__logo {
      object-fit: cover;
   -o-object-position: 48% 55%;
      object-position: 48% 55%;
-  margin-bottom: -25px;
+  margin-bottom: -10px;
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__enchantee_text {
+.restaurants__enchantee_text_heart_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffff;
-  padding: 10px 15px;
-  height: 90px;
+  padding: 20px 15px 10px 15px;
+  height: 80px;
   width: 99.9%;
   -webkit-box-shadow: 0 0 25px -15px #444444;
           box-shadow: 0 0 25px -15px #444444;
   border-radius: 0px 0px 15px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   line-height: 1.4;
+  text-decoration: none;
+  color: black;
 }
 
 .restaurants__nouveau-enchantee {
+  font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
   color: #008766;
@@ -339,8 +354,8 @@ header .header__logo {
   padding: .4em 1em;
   right: 1em;
   top: .1em;
-  -webkit-filter: drop-shadow(0px 4px 1px #4444442e);
-          filter: drop-shadow(0px 4px 1px #4444442e);
+  -webkit-filter: drop-shadow(0px 3px 2px #4444442e);
+          filter: drop-shadow(0px 3px 2px #4444442e);
   border-radius: 3px 3px 3px 3px;
 }
 
@@ -357,21 +372,34 @@ header .header__logo {
      object-fit: cover;
   -o-object-position: 48% 55%;
      object-position: 48% 55%;
-  margin-bottom: -25px;
+  margin-bottom: -10px;
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__francaise_text {
+.restaurants__francaise_text_heart_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffff;
-  padding: 10px 15px;
-  height: 90px;
+  padding: 20px 15px 10px 15px;
+  height: 80px;
   width: 99.9%;
   -webkit-box-shadow: 0 0 25px -15px #444444;
           box-shadow: 0 0 25px -15px #444444;
   border-radius: 0px 0px 15px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   line-height: 1.4;
+  text-decoration: none;
+  color: black;
 }
 
 .restaurants__le-delice-des-sens {
@@ -387,20 +415,96 @@ header .header__logo {
      object-fit: cover;
   -o-object-position: 48% 55%;
      object-position: 48% 55%;
-  margin-bottom: -25px;
+  margin-bottom: -10px;
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__delice_text {
+.restaurants__delice_text_heart_bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffff;
-  padding: 10px 15px;
-  height: 90px;
+  padding: 20px 15px 10px 15px;
+  height: 80px;
   width: 99.9%;
   -webkit-box-shadow: 0 0 25px -15px #444444;
           box-shadow: 0 0 25px -15px #444444;
   border-radius: 0px 0px 15px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   line-height: 1.4;
+  text-decoration: none;
+  color: black;
+}
+
+Footer {
+  margin-top: -1.5em;
+  margin-bottom: 0em;
+  padding-bottom: 2em;
+  background-color: #353535;
+}
+
+.footer__content__title {
+  font-family: "Shrikhand", cursive;
+  margin-left: 5%;
+  font-size: 1.1em;
+  font-weight: 100;
+  color: #ffff;
+  padding-top: 1.2em;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  list-style-type: none;
+  color: #ffff;
+  margin-bottom: 0;
+  padding-left: 5%;
+  line-height: 0;
+}
+
+ul .footer__utensils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+ul .footer__hands-helping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.footer__content {
+  width: 90%;
 }
 /*# sourceMappingURL=style.css.map */
