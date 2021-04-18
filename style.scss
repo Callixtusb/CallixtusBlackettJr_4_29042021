@@ -1,22 +1,6 @@
-$font-logo-and-titles: 'Shrikhand', cursive;
-$font-text: 'Roboto', sans-serif;
-$title-bkgnd-color: #ffff;
-$location-band-color: #eaeaea;
-$primary-bkgnd-color: #f6f6f6;
-$secondary-color: #FF79DA;
-$primary-color: #9356DC;
-$footer-bkgnd-color: #353535;
+@import 'sass/Utils/variables';
+@import 'sass/Utils/mixins';
 
-@mixin btn-gradient-color {
-  background: $secondary-color;
-    background: -moz-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #FF79DA), color-stop(46%, #FF79DA), color-stop(100%, #9356DC));
-    background: -webkit-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
-    background: -o-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
-    background: -ms-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
-    background: linear-gradient(to bottom, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
-}
 
 *{
     box-sizing: border-box;  
@@ -25,7 +9,6 @@ $footer-bkgnd-color: #353535;
 body {
 margin: 0 auto;
 font-family: $font-text;
-
 }
 
 header {
@@ -64,14 +47,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     margin-left: auto;
     margin-right: auto;
     padding: 45px 0px 90px 0px;
-    background: #ffffff;
-    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(67%, #f6f6f6), color-stop(100%, #f2f2f2));
-    background: -webkit-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
-    background: -o-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
-    background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
-    background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0 );
+    @include background-gradient-color-pitch;
 }
    &__content {
     text-align: center;
@@ -92,13 +68,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
         }
     
   &__btn-nos-restos {
-    border: 0px;
-    border-radius: 30px 30px 30px 30px;
-    padding: 15px 20px;
-    color: #ffff;
-    text-decoration: none;
-    @include btn-gradient-color;
-    filter: drop-shadow(0px 7px 6px #0000002e);
+    @include btn-execusion;
    }  
  }
 
@@ -139,7 +109,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
      li {
      // Increment counter on each list item //
      counter-increment: list;
-     filter: drop-shadow(0px 3px 6px #4444442e);
+     @include Drop-shadow-pour-btn-de-selection;
       }
 
      li::before {
@@ -159,66 +129,30 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
     //Mobile phone icon//
      .fa-mobile-alt {
-     color: #7e7e7e;
-     border: 0px;
-     background-color: $primary-bkgnd-color;
-     border-radius: 20px 0px 0px 20px;
-     padding: 20.8px 10px 21.8px 25px;
+     @include icon-btn-fonctionnement-std;
     
     }
     //Mobile phone button text//
     &__restaurant {
-     text-decoration: none;
-     color: black;
-     font-weight: 600;
-     border: 0px;
-     background-color: $primary-bkgnd-color;
-     border-radius: 0px 20px 20px 0px;
-     padding: 20px 55px 20px 10px;
-     margin-left: -2%;
-     
+     @include btn-fonctionnement-std;     
     }
     //Menu icon//
      .fa-list-ul{
-      color: #7e7e7e;
-      border: 0px;
-      background-color: $primary-bkgnd-color;
-      border-radius: 20px 0px 0px 20px;
-      padding: 21px 10px 22px 25px;
+      @include icon-btn-fonctionnement-std;
      }
     //Menu button text//
     &__menu {
-      text-decoration: none;
-      color: black;
-      font-weight: 600;
-      border: 0px;
-      background-color: $primary-bkgnd-color;
-      border-radius: 0px 20px 20px 0px;
-      padding: 20px 55px 20px 10px;
-      margin-left: -2%;
-
+      @include btn-fonctionnement-std;
     }
     //Dégustez icon
     .fa-store{
-      color: $primary-color;
-      border: 0px;
-      background-color: #f8ebfc;
-      border-radius: 20px 0px 0px 20px;
-      padding: 21px 10px 22px 25px; 
+      @include icon-btn-fonctionnement-active;
 
     }
     //Dégustez button text//
     &__deguster {
-      text-decoration: none;
-      color: black;
-      font-weight: 600;
-      border: 0px;
-      background-color: #f8ebfc;
-      border-radius: 0px 20px 20px 0px;
-      padding: 20px 55px 20px 10px;
-      margin-left: -2%;
+      @include btn-fonctionnement-active;
     }
-
 
  }
 
@@ -248,219 +182,48 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
       } 
 
      &__la-palette-du-gout {
-      width: 90%;
-      height: 143px;
-      margin-bottom: 20px;
-      position: relative;
-      }
+       @include card-resto-general;
+       position: relative;  }
 
-     &__palette_pic {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      object-position: 48% 55%;
-      margin-bottom: -10px;
-      border-radius: 15px 15px 0px 0px;
-      }
+     &__palette_pic {@include card-resto-pic;}
 
-     &__palette_text_heart_bloc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      align-content: center;
-      background-color: #ffff;
-      padding: 20px 15px 10px 15px;
-      height: 80px;
-      width: 99.9%;
-      box-shadow: 0 0 25px -15px #444444;
-      border-radius: 0px 0px 15px 15px;
-      line-height: 1.4;
-      text-decoration: none;
-      color: black;
-      }
-
+     &__palette_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
      &__nouveau-palette {
-      font-size: .85em;
-      position: absolute;
-      background-color: #99e2d0;
-      color: #008766;
-      border: 0px;
-      padding: .4em 1em;
-      right: 1em;
-      top: .1em;
-      filter: drop-shadow(0px 3px 2px #4444442e);
-      border-radius: 3px 3px 3px 3px;
-      }
-
-      
-
-
+       @include card-resto-etiquette_nouveau;
+       position: absolute;    }
 
   
      &__la-note-enchantee {
-      width: 90%;
-      height: 143px;
-      margin-bottom: 20px;
-      position: relative;
-     }
+       @include card-resto-general;
+       position: relative;  }
 
-     &__enchantee_pic {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      object-position: 48% 55%;
-      margin-bottom: -10px;
-      border-radius: 15px 15px 0px 0px;
-     }
+     &__enchantee_pic {@include card-resto-pic;}
 
-    &__enchantee_text_heart_bloc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffff;
-      padding: 20px 15px 10px 15px;
-      height: 80px;
-      width: 99.9%;
-      box-shadow: 0 0 25px -15px #444444;
-      border-radius: 0px 0px 15px 15px;
-      line-height: 1.4;
-      text-decoration: none;
-      color: black;
-    }
+    &__enchantee_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
     &__nouveau-enchantee {
-      font-size: .85em;
-      position: absolute;
-      background-color: #99e2d0;
-      color: #008766;
-      border: 0px;
-      padding: .4em 1em;
-      right: 1em;
-      top: .1em;
-      filter: drop-shadow(0px 3px 2px #4444442e);
-      border-radius: 3px 3px 3px 3px;
-    }
+      @include card-resto-etiquette_nouveau;
+      position: absolute;   }
 
 
+    &__a-la-francaise {@include card-resto-general;}
+
+    &__francaise_pic {@include card-resto-pic;}
+
+    &__francaise_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
 
-    &__a-la-francaise {
-      width: 90%;
-      height: 143px;
-      margin-bottom: 20px;
-    }
-
-    &__francaise_pic {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      object-position: 48% 55%;
-      margin-bottom: -10px;
-      border-radius: 15px 15px 0px 0px;
-
-    }
-
-    &__francaise_text_heart_bloc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffff;
-      padding: 20px 15px 10px 15px;
-      height: 80px;
-      width: 99.9%;
-      box-shadow: 0 0 25px -15px #444444;
-      border-radius: 0px 0px 15px 15px;
-      line-height: 1.4;
-      text-decoration: none;
-      color: black;
-    }
-
-
-
-
-    &__le-delice-des-sens {
-      width: 90%;
-      height: 143px;
-      margin-bottom: 20px;
-    }
+    &__le-delice-des-sens {@include card-resto-general;}
     
-    &__delice_pic {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      object-position: 48% 55%;
-      margin-bottom: -10px;
-      border-radius: 15px 15px 0px 0px;
-    }
+    &__delice_pic {@include card-resto-pic;}
 
-    &__delice_text_heart_bloc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffff;
-      padding: 20px 15px 10px 15px;
-      height: 80px;
-      width: 99.9%;
-      box-shadow: 0 0 25px -15px #444444;
-      border-radius: 0px 0px 15px 15px;
-      line-height: 1.4;
-      text-decoration: none;
-      color: black;
-    }
-
+    &__delice_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
  }
 
 
 Footer {
-       margin-top: -1.5em;
-       margin-bottom: 0em;
-       padding-bottom: 2em;
-       background-color: $footer-bkgnd-color;
+@include footer;
 }
-
-     .footer__content__title {
-        font-family: $font-logo-and-titles;
-        margin-left: 5%;
-        font-size: 1.1em;
-        font-weight: 100;
-        color: #ffff;
-        padding-top: 1.2em;
-        }
       
-     ul {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          margin: 0;
-          list-style-type: none;
-          color: #ffff;
-          margin-bottom: 0;
-          padding-left: 5%;
-          line-height: 0;
-           .footer__utensils {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px;
-            }
-
-           .footer__hands-helping {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px;
-            }
-        }   
-         
-        .footer__content {
-         width: 90%;
-
-        }
-        
-        
