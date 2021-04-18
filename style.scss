@@ -3,7 +3,7 @@
 
 
 *{
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 body {
@@ -41,8 +41,10 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
 
   .pitch {
-      
-   &__wrapper {  
+    
+
+   &__wrapper {
+    
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -77,6 +79,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
   margin-top: 50px;
 
    &__wrapper {
+    max-width: 1224px;
     width: 100%;
     margin-left: auto;
     margin-right: auto; 
@@ -161,6 +164,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     margin-top: 4em;
 
     &__wrapper {
+      max-width: 1224px;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -179,11 +183,18 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
       flex-wrap: wrap;
       justify-content: space-evenly;
       gap: 75px;
+      // Tablet portrait & Desktop ////////////////////////////
+      @media screen and (min-width: 768px) {
+        justify-content: center; }
       } 
 
+
      &__la-palette-du-gout {
-       @include card-resto-general;
-       position: relative;  }
+       @include card-resto-general; position: relative;  
+      // Tablet portrait & Desktop ////////////////////////////
+       @media screen and (min-width: 768px) {
+         width: 40%; }
+      }
 
      &__palette_pic {@include card-resto-pic;}
 
@@ -195,8 +206,11 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
   
      &__la-note-enchantee {
-       @include card-resto-general;
-       position: relative;  }
+       @include card-resto-general; position: relative;  
+      // Tablet portrait & Desktop ////////////////////////////
+      @media screen and (min-width: 768px) {
+        width: 40%; }
+      }
 
      &__enchantee_pic {@include card-resto-pic;}
 
@@ -207,14 +221,23 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
       position: absolute;   }
 
 
-    &__a-la-francaise {@include card-resto-general;}
+    &__a-la-francaise {@include card-resto-general;
+    // Tablet portrait & Desktop ////////////////////////////
+    @media screen and (min-width: 768px) {
+      width: 40%; }
+    }
 
     &__francaise_pic {@include card-resto-pic;}
 
     &__francaise_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
 
-    &__le-delice-des-sens {@include card-resto-general;}
+
+    &__le-delice-des-sens {@include card-resto-general;
+    // Tablet portrait & Desktop ////////////////////////////
+    @media screen and (min-width: 768px) {
+      width: 40%; }
+    }
     
     &__delice_pic {@include card-resto-pic;}
 
@@ -222,8 +245,15 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
  }
 
-
 Footer {
 @include footer;
+// Tablet portrait & Desktop ////////////////////////////
+@media screen and (min-width: 768px) {
+  ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0; }
 }
-      
+}
