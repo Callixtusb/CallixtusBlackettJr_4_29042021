@@ -55,7 +55,5 @@ header {
 
 footer {
     @include footer;
-    position: absolute;
     width: 100%;
-    bottom: -80%;
 }

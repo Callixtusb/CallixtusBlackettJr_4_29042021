@@ -78,9 +78,7 @@ footer {
   margin-bottom: 0em;
   padding-bottom: 2em;
   background-color: #353535;
-  position: absolute;
   width: 100%;
-  bottom: -80%;
 }
 
 footer .footer__content__title {
