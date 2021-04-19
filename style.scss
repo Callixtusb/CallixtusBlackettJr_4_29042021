@@ -12,17 +12,7 @@ font-family: $font-text;
 }
 
 header {
-background-color: $title-bkgnd-color;
-padding: 25px 0px 16px 0px;
-position: relative;
--webkit-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
--moz-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
- .header__logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
+@include header;
  }
 
  .search__content {
@@ -37,14 +27,13 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
    &--grey {
      background-color: $location-band-color;
      }
- }
+   }
 
 
   .pitch {
     
 
    &__wrapper {
-    
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -184,7 +173,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
       justify-content: space-evenly;
       gap: 75px;
       // Tablet portrait & Desktop ////////////////////////////
-      @media screen and (min-width: 768px) {
+      @include breakpoint (laptop) {
         justify-content: center; }
       } 
 
@@ -192,7 +181,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
      &__la-palette-du-gout {
        @include card-resto-general; position: relative;  
       // Tablet portrait & Desktop ////////////////////////////
-       @media screen and (min-width: 768px) {
+      @include breakpoint (laptop) {
          width: 40%; }
       }
 
@@ -208,7 +197,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
      &__la-note-enchantee {
        @include card-resto-general; position: relative;  
       // Tablet portrait & Desktop ////////////////////////////
-      @media screen and (min-width: 768px) {
+      @include breakpoint (laptop) {
         width: 40%; }
       }
 
@@ -223,7 +212,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
     &__a-la-francaise {@include card-resto-general;
     // Tablet portrait & Desktop ////////////////////////////
-    @media screen and (min-width: 768px) {
+    @include breakpoint (laptop) {
       width: 40%; }
     }
 
@@ -235,7 +224,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 
     &__le-delice-des-sens {@include card-resto-general;
     // Tablet portrait & Desktop ////////////////////////////
-    @media screen and (min-width: 768px) {
+    @include breakpoint (laptop) {
       width: 40%; }
     }
     
@@ -248,7 +237,7 @@ box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
 Footer {
 @include footer;
 // Tablet portrait & Desktop ////////////////////////////
-@media screen and (min-width: 768px) {
+@include breakpoint (laptop) {
   ul {
   display: flex;
   flex-direction: row;
