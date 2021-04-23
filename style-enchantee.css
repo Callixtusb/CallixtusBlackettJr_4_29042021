@@ -73,6 +73,7 @@ header .header__content {
 .menu__wrapper .menu__content {
   width: 90%;
   margin: auto;
+  max-width: 1224px;
 }
 
 @media screen and (min-width: 768px) {

@@ -30,6 +30,7 @@ body {
     .menu__content {
     width: 90%;
     margin: auto;
+    max-width: 1224px;
 
     // Tablet portrait & Desktop ////////////////////////////
     @include breakpoint (laptop) {
