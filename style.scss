@@ -186,60 +186,15 @@ header {
         justify-content: center; }
       } 
 
+     
+      @include la-palette-du-gout;
 
-     &__la-palette-du-gout {
-       @include card-resto-general; position: relative;  
-      // Tablet portrait & Desktop ////////////////////////////
-      @include breakpoint (laptop) {
-         width: 40%; }
-      }
+      @include la-note-enchantee;
 
-     &__palette_pic {@include card-resto-pic;}
-
-     &__palette_text_heart_bloc {@include card-resto-text-heart-bloc;}
-
-     &__nouveau-palette {
-       @include card-resto-etiquette_nouveau;
-       position: absolute;    }
-
+      @include a-la-francaise;
   
-     &__la-note-enchantee {
-       @include card-resto-general; position: relative;  
-      // Tablet portrait & Desktop ////////////////////////////
-      @include breakpoint (laptop) {
-        width: 40%; }
-      }
+      @include le-delice-des-sens;
 
-     &__enchantee_pic {@include card-resto-pic;}
-
-    &__enchantee_text_heart_bloc {@include card-resto-text-heart-bloc;}
-
-    &__nouveau-enchantee {
-      @include card-resto-etiquette_nouveau;
-      position: absolute;   }
-
-
-    &__a-la-francaise {@include card-resto-general;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-      width: 40%; }
-    }
-
-    &__francaise_pic {@include card-resto-pic;}
-
-    &__francaise_text_heart_bloc {@include card-resto-text-heart-bloc;}
-
-
-
-    &__le-delice-des-sens {@include card-resto-general;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-      width: 40%; }
-    }
-    
-    &__delice_pic {@include card-resto-pic;}
-
-    &__delice_text_heart_bloc {@include card-resto-text-heart-bloc;}
 
  }
 

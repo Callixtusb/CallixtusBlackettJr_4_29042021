@@ -275,7 +275,7 @@ header .header__logo {
   }
 }
 
-.restaurants__palette_pic {
+.restaurants__pic {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -286,7 +286,7 @@ header .header__logo {
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__palette_text_heart_bloc {
+.restaurants__text_heart_bloc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +312,7 @@ header .header__logo {
   color: black;
 }
 
-.restaurants__nouveau-palette {
+.restaurants__nouveau {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
@@ -340,7 +340,7 @@ header .header__logo {
   }
 }
 
-.restaurants__enchantee_pic {
+.restaurants__pic {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -351,7 +351,7 @@ header .header__logo {
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__enchantee_text_heart_bloc {
+.restaurants__text_heart_bloc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +377,7 @@ header .header__logo {
   color: black;
 }
 
-.restaurants__nouveau-enchantee {
+.restaurants__nouveau {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
@@ -396,6 +396,7 @@ header .header__logo {
   width: 90%;
   height: 143px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -404,7 +405,7 @@ header .header__logo {
   }
 }
 
-.restaurants__francaise_pic {
+.restaurants__pic {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -415,7 +416,7 @@ header .header__logo {
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__francaise_text_heart_bloc {
+.restaurants__text_heart_bloc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,10 +442,27 @@ header .header__logo {
   color: black;
 }
 
+.restaurants__nouveau--no {
+  font-size: .85em;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  border: 0px;
+  padding: .4em 1em;
+  right: 1em;
+  top: .1em;
+  -webkit-filter: drop-shadow(0px 3px 2px #4444442e);
+          filter: drop-shadow(0px 3px 2px #4444442e);
+  border-radius: 3px 3px 3px 3px;
+  position: absolute;
+  opacity: 0;
+}
+
 .restaurants__le-delice-des-sens {
   width: 90%;
   height: 143px;
   margin-bottom: 20px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -453,7 +471,7 @@ header .header__logo {
   }
 }
 
-.restaurants__delice_pic {
+.restaurants__pic {
   width: 100%;
   height: 150px;
   -o-object-fit: cover;
@@ -464,7 +482,7 @@ header .header__logo {
   border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants__delice_text_heart_bloc {
+.restaurants__text_heart_bloc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,6 +506,22 @@ header .header__logo {
   line-height: 1.4;
   text-decoration: none;
   color: black;
+}
+
+.restaurants__nouveau--no {
+  font-size: .85em;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  border: 0px;
+  padding: .4em 1em;
+  right: 1em;
+  top: .1em;
+  -webkit-filter: drop-shadow(0px 3px 2px #4444442e);
+          filter: drop-shadow(0px 3px 2px #4444442e);
+  border-radius: 3px 3px 3px 3px;
+  position: absolute;
+  opacity: 0;
 }
 
 Footer {

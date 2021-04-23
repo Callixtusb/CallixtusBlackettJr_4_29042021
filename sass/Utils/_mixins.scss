@@ -96,6 +96,68 @@
   }
   
   //Carte Restaurants - rubrique Restaurants (page d'accueil)//
+
+  @mixin la-palette-du-gout {
+    &__la-palette-du-gout {
+      @include card-resto-general; position: relative;  
+     // Tablet portrait & Desktop ////////////////////////////
+     @include breakpoint (laptop) {
+        width: 40%; }
+     }
+    &__pic {@include card-resto-pic;}
+    &__text_heart_bloc {@include card-resto-text-heart-bloc;}
+    &__nouveau {
+      @include card-resto-etiquette_nouveau;
+      position: absolute;    }
+  }
+
+  @mixin la-note-enchantee {
+    &__la-note-enchantee {
+      @include card-resto-general; position: relative;  
+     // Tablet portrait & Desktop ////////////////////////////
+     @include breakpoint (laptop) {
+      width: 40%; }
+    }
+   &__pic {@include card-resto-pic;}
+   &__text_heart_bloc {@include card-resto-text-heart-bloc;}
+   &__nouveau {
+     @include card-resto-etiquette_nouveau;
+     position: absolute;   }
+  }
+
+  @mixin a-la-francaise {
+   &__a-la-francaise {@include card-resto-general; position: relative;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+      width: 40%; }
+    }
+   &__pic {@include card-resto-pic;}
+   &__text_heart_bloc {@include card-resto-text-heart-bloc;}
+   &__nouveau--no {
+    @include card-resto-etiquette_nouveau;
+    position: absolute; 
+    opacity: 0;  }
+  }
+
+  @mixin le-delice-des-sens {
+  &__le-delice-des-sens {@include card-resto-general; position: relative;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+      width: 40%; }
+    }
+    &__pic {@include card-resto-pic;}
+    &__text_heart_bloc {@include card-resto-text-heart-bloc;}
+    &__nouveau--no {
+      @include card-resto-etiquette_nouveau;
+      position: absolute; 
+      opacity: 0;  }
+    }
+
+
+
+
+
+
   @mixin card-resto-general {
     width: 90%;
     height: 143px;
@@ -140,6 +202,7 @@
     border-radius: 3px 3px 3px 3px;
   }
   
+
   //Footer - (All pages)//
   @mixin footer {
       margin-top: -1.5em;
@@ -225,6 +288,17 @@
           }
    }
    }
+
+
+
+
+
+
+
+
+
+
+  //Pages individuel des Restaurants)//
 
   @mixin menu__title-and-heart-bloc {
     display: flex;

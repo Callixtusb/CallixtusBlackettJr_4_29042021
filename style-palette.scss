@@ -62,37 +62,22 @@ body {
     margin-top: 30px;
     }
     }
-    
     .menu__entree__title { @include menu_titles;}
-
     //  ENTRÉES-DESCRIPTIONS 1 //
     .menu__entree__desc1 { @include menu_descriptions;}
-
     .menu__entree__desc1 p { margin: 3px;}
-
     .menu__entree__desc1 a { text-decoration: none; color: black;}
-
     .menu__entree__price1 { @include menu_prices;}
- 
-    //  ENTRÉES-DESCRIPTIONS 2 //
+     //  ENTRÉES-DESCRIPTIONS 2 //
     .menu__entree__desc2 { @include menu_descriptions;}
-    
     .menu__entree__desc2 p { margin: 3px;}
-
-    .menu__entree__choice2 { text-decoration: none; color: black;}
-
+    .menu__entree__desc2 a { text-decoration: none; color: black;}
     .menu__entree__price2 { @include menu_prices;}
-    
     //  ENTRÉES-DESCRIPTIONS 3 //
     .menu__entree__desc3 { @include menu_descriptions;}
-    
     .menu__entree__desc3 p { margin: 3px;}
-
-    .menu__entree__choice3 { text-decoration: none; color: black;}
-
+    .menu__entree__desc3 a { text-decoration: none; color: black;}
     .menu__entree__price3 { @include menu_prices;}
-    
-
     // PLATS //
     .menu__content__plats__list { @include menu_content_list;
     // Tablet portrait & Desktop ////////////////////////////
@@ -102,37 +87,22 @@ body {
     margin-top: 30px;
      }
     }
-
     .menu__plats__title { @include menu_titles;}
-
     //  PLATS-DESCRIPTIONS 1 //
     .menu__plats__desc1 { @include menu_descriptions;}
-    
     .menu__plats__desc1 p { margin: 3px;}
-
-    .menu__plats__choice1 { text-decoration: none; color: black;}
-
+    .menu__plats__desc1 a { text-decoration: none; color: black;}
     .menu__plats__price1 { @include menu_prices;}
- 
     //  PLATS-DESCRIPTIONS 2 //
     .menu__plats__desc2 { @include menu_descriptions;}
-    
     .menu__plats__desc2 p { margin: 3px;}
-
-    .menu__plats__choice2 { text-decoration: none; color: black;}
-
+    .menu__plats__desc2 a { text-decoration: none; color: black;}
     .menu__plats__price2 { @include menu_prices;}
-    
     //  PLATS-DESCRIPTIONS 3 //
     .menu__plats__desc3 { @include menu_descriptions;}
-    
     .menu__plats__desc3 p { margin: 3px;}
-
-    .menu__plats__choice3 { text-decoration: none; color: black;}
-
+    .menu__plats__desc3 a { text-decoration: none; color: black;}
     .menu__plats__price3 { @include menu_prices;}
-
-
     // DESSERTS //
     .menu__content__desserts__list { @include menu_content_list;
     // Tablet portrait & Desktop ////////////////////////////
@@ -142,36 +112,22 @@ body {
         margin-top: 30px;
          }
     }
-
     .menu__desserts__title { @include menu_titles;}
-
     //  DESSERTS-DESCRIPTIONS 1 //
     .menu__desserts__desc1 { @include menu_descriptions;}
-    
     .menu__desserts__desc1 p { margin: 3px;}
-
-    .menu__desserts__choice1 { text-decoration: none; color: black;}
-
+    .menu__desserts__desc1 a { text-decoration: none; color: black;}
     .menu__desserts__price1 { @include menu_prices;}
- 
     //  DESSERTS-DESCRIPTIONS 2 //
     .menu__desserts__desc2 { @include menu_descriptions;}
-    
     .menu__desserts__desc2 p { margin: 3px;}
-
-    .menu__desserts__choice2 { text-decoration: none; color: black;}
-
+    .menu__desserts__desc2 a { text-decoration: none; color: black;}
     .menu__desserts__price2 { @include menu_prices;}
-    
     //  DESSERTS-DESCRIPTIONS 3 //
     .menu__desserts__desc3 { @include menu_descriptions;}
-    
     .menu__desserts__desc3 p { margin: 3px;}
-
-    .menu__desserts__choice3 { text-decoration: none; color: black;}
-
+    .menu__desserts__desc3 a { text-decoration: none; color: black;}
     .menu__desserts__price3 { @include menu_prices;}
-
 
     // ANIMATION - Rolling check-icon //
     .remplissage {
@@ -185,20 +141,16 @@ body {
         border-radius: 0px 15px 15px 0px;
         transition: all 0.4s linear 0s;
     }
-    
     .menu__description:hover .remplissage {
         width: 60px;
         padding: 17px 10px 17px 10px;
     }
-    
     .price {
         transition: all 0.4s linear 0s;
     }
-    
     .menu__description:hover .price {
         text-indent: -80px;
     }
-    
     .remplissage-content:after {
         content:"\f058";
         font-family: FontAwesome;
@@ -217,20 +169,17 @@ body {
         animation: left-to-right 0.5s;
         transition: opacity .6s;
     }
-    
     .menu__description:hover .remplissage-content:after {
       right: 30px;
       opacity: 2;
       animation: rolling 0.5s linear 0s;
     }
-    
     @keyframes rolling {
       0% {transform: translateX(30px) rotateZ(360deg);}
       33% {transform: translateX(20px) rotateZ(300deg);}
       66% {transform: translateX(10px) rotateZ(180deg);}
       100% {transform: translateX(0px) rotateZ(0deg);}
     }
-    
     @keyframes left-to-right {
       0% {transform: translateX(0px) rotateZ(0deg);}
       33% {transform: translateX(10px) rotateZ(180deg);}
@@ -266,15 +215,11 @@ body {
     .menu__desserts__desc3 {animation: fadein 8.5s;}
     @keyframes fadein {  from { opacity:0; } to { opacity:9; }  }
 
-
 }
-
 
     // Section of button 'Commander' //
     @include section-btn-commander;
     
-
-
     // FOOTER //
     footer {
     @include footer;

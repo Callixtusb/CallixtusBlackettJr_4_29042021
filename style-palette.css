@@ -214,7 +214,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__entree__choice2 {
+.menu__wrapper .menu__entree__desc2 a {
   text-decoration: none;
   color: black;
 }
@@ -251,7 +251,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__entree__choice3 {
+.menu__wrapper .menu__entree__desc3 a {
   text-decoration: none;
   color: black;
 }
@@ -324,7 +324,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__plats__choice1 {
+.menu__wrapper .menu__plats__desc1 a {
   text-decoration: none;
   color: black;
 }
@@ -361,7 +361,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__plats__choice2 {
+.menu__wrapper .menu__plats__desc2 a {
   text-decoration: none;
   color: black;
 }
@@ -398,7 +398,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__plats__choice3 {
+.menu__wrapper .menu__plats__desc3 a {
   text-decoration: none;
   color: black;
 }
@@ -471,7 +471,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__desserts__choice1 {
+.menu__wrapper .menu__desserts__desc1 a {
   text-decoration: none;
   color: black;
 }
@@ -508,7 +508,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__desserts__choice2 {
+.menu__wrapper .menu__desserts__desc2 a {
   text-decoration: none;
   color: black;
 }
@@ -545,7 +545,7 @@ header .header__content {
   margin: 3px;
 }
 
-.menu__wrapper .menu__desserts__choice3 {
+.menu__wrapper .menu__desserts__desc3 a {
   text-decoration: none;
   color: black;
 }
