@@ -26,11 +26,14 @@ body {
     width: 100%;
     margin-top: -17px;
     padding-top: 32px;
-    
+    max-width: 1224px;
+    position: relative;
+    margin: auto;
+
     .menu__content {
     width: 90%;
     margin: auto;
-    max-width: 1224px;
+    
 
     // Tablet portrait & Desktop ////////////////////////////
     @include breakpoint (laptop) {

@@ -43,6 +43,11 @@ header .header__content {
   }
 }
 
+.pic-intro__content {
+  width: 100%;
+  position: relative;
+}
+
 .pic-intro__content .pic-intro__picture {
   width: 100%;
   -o-object-fit: cover;
@@ -50,7 +55,7 @@ header .header__content {
   -o-object-position: 48% 55%;
      object-position: 48% 55%;
   height: 220px;
-  position: relative;
+  margin: 0;
 }
 
 .pic-intro__content .menu__title__bkgnd {
@@ -61,6 +66,11 @@ header .header__content {
   padding: 12px 0px 25px 0px;
   border-radius: 40px 40px 0px 0px;
   position: absolute;
+  max-width: 1224px;
+  top: 109%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .menu__wrapper {
@@ -68,12 +78,14 @@ header .header__content {
   width: 100%;
   margin-top: -17px;
   padding-top: 32px;
+  max-width: 1224px;
+  position: relative;
+  margin: auto;
 }
 
 .menu__wrapper .menu__content {
   width: 90%;
   margin: auto;
-  max-width: 1224px;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,6 +270,43 @@ header .header__content {
 }
 
 .menu__wrapper .menu__entree__price3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 12px;
+}
+
+.menu__wrapper .menu__entree__desc4 {
+  width: 100%;
+  border: 0px;
+  line-height: 1;
+  font-size: 14px;
+  background-color: #ffff;
+  -webkit-filter: drop-shadow(0px 3px 6px #4444442e);
+          filter: drop-shadow(0px 3px 6px #4444442e);
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu__wrapper .menu__entree__desc4 p {
+  margin: 3px;
+}
+
+.menu__wrapper .menu__entree__desc4 a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__wrapper .menu__entree__price4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,6 +893,7 @@ header .header__content {
   margin: auto;
   margin-bottom: -10px;
   margin-top: -17px;
+  max-width: 1224px;
 }
 
 .btn__commander__wrapper .btn__commander__content {
