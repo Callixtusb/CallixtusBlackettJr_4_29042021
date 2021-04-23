@@ -13,7 +13,7 @@ body {
 
 @include page_header;
 .header__wrapper {
-// Tablet portrait & Desktop ////////////////////////////
+// Tablet portrait & Desktop ////////////////////////
 @include breakpoint (laptop) {
     margin-left: -80px;
     }
@@ -82,6 +82,13 @@ body {
     .menu__entree__desc3 p { margin: 3px;}
     .menu__entree__desc3 a { text-decoration: none; color: black;}
     .menu__entree__price3 { @include menu_prices;}
+    //  ENTRÉES-DESCRIPTIONS 4 //
+    .menu__entree__desc4 { @include menu_descriptions;}
+    .menu__entree__desc4 p { margin: 3px;}
+    .menu__entree__desc4 a { text-decoration: none; color: black;}
+    .menu__entree__price4 { @include menu_prices;}
+
+
     // PLATS //
     .menu__content__plats__list { @include menu_content_list;
     // Tablet portrait & Desktop ////////////////////////////

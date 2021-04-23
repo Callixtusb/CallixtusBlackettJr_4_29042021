@@ -1,0 +1,247 @@
+@import 'sass/Utils/variables';
+@import 'sass/Utils/mixins';
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+   margin: 0 auto;
+   font-family: $font-text;
+}
+
+@include page_header;
+.header__wrapper {
+// Tablet portrait & Desktop ////////////////////////////
+@include breakpoint (laptop) {
+    margin-left: -80px;
+    }
+    }
+
+@include pic-intro__content;
+
+.menu__wrapper {
+    background-color: $primary-bkgnd-color;
+    width: 100%;
+    margin-top: -17px;
+    padding-top: 32px;
+    max-width: 1224px;
+    position: relative;
+    margin: auto;
+
+    .menu__content {
+    width: 90%;
+    margin: auto;
+    
+
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     }
+    }
+    
+    //Restanrants Page title//
+    .menu__title-and-heart-bloc { @include menu__title-and-heart-bloc;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    position: absolute;
+    align-self: flex-start;
+    left: 60px;
+       .menu__heart { 
+       margin-left: 50px
+       }
+    }
+    }
+    
+    // ENTRÉES //
+    .menu__content__entrees__list { @include menu_content_list;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    justify-self: flex-start;
+    width: 100%;
+    margin-top: 30px;
+    }
+    }
+    .menu__entree__title { @include menu_titles;}
+    //  ENTRÉES-DESCRIPTIONS 1 //
+    .menu__entree__desc1 { @include menu_descriptions;}
+    .menu__entree__desc1 p { margin: 3px;}
+    .menu__entree__desc1 a { text-decoration: none; color: black;}
+    .menu__entree__price1 { @include menu_prices;}
+     //  ENTRÉES-DESCRIPTIONS 2 //
+    .menu__entree__desc2 { @include menu_descriptions;}
+    .menu__entree__desc2 p { margin: 3px;}
+    .menu__entree__desc2 a { text-decoration: none; color: black;}
+    .menu__entree__price2 { @include menu_prices;}
+    //  ENTRÉES-DESCRIPTIONS 3 //
+    .menu__entree__desc3 { @include menu_descriptions;}
+    .menu__entree__desc3 p { margin: 3px;}
+    .menu__entree__desc3 a { text-decoration: none; color: black;}
+    .menu__entree__price3 { @include menu_prices;}
+    //  ENTRÉES-DESCRIPTIONS 4 //
+    .menu__entree__desc4 { @include menu_descriptions;}
+    .menu__entree__desc4 p { margin: 3px;}
+    .menu__entree__desc4 a { text-decoration: none; color: black;}
+    .menu__entree__price4 { @include menu_prices;}
+
+
+    // PLATS //
+    .menu__content__plats__list { @include menu_content_list;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    justify-self: flex-start;
+    width: 100%;
+    margin-top: 30px;
+     }
+    }
+    .menu__plats__title { @include menu_titles;}
+    //  PLATS-DESCRIPTIONS 1 //
+    .menu__plats__desc1 { @include menu_descriptions;}
+    .menu__plats__desc1 p { margin: 3px;}
+    .menu__plats__desc1 a { text-decoration: none; color: black;}
+    .menu__plats__price1 { @include menu_prices;}
+    //  PLATS-DESCRIPTIONS 2 //
+    .menu__plats__desc2 { @include menu_descriptions;}
+    .menu__plats__desc2 p { margin: 3px;}
+    .menu__plats__desc2 a { text-decoration: none; color: black;}
+    .menu__plats__price2 { @include menu_prices;}
+    //  PLATS-DESCRIPTIONS 3 //
+    .menu__plats__desc3 { @include menu_descriptions;}
+    .menu__plats__desc3 p { margin: 3px;}
+    .menu__plats__desc3 a { text-decoration: none; color: black;}
+    .menu__plats__price3 { @include menu_prices;}
+    // DESSERTS //
+    .menu__content__desserts__list { @include menu_content_list;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+        justify-self: flex-start;
+        width: 100%;
+        margin-top: 30px;
+         }
+    }
+    .menu__desserts__title { @include menu_titles;}
+    //  DESSERTS-DESCRIPTIONS 1 //
+    .menu__desserts__desc1 { @include menu_descriptions;}
+    .menu__desserts__desc1 p { margin: 3px;}
+    .menu__desserts__desc1 a { text-decoration: none; color: black;}
+    .menu__desserts__price1 { @include menu_prices;}
+    //  DESSERTS-DESCRIPTIONS 2 //
+    .menu__desserts__desc2 { @include menu_descriptions;}
+    .menu__desserts__desc2 p { margin: 3px;}
+    .menu__desserts__desc2 a { text-decoration: none; color: black;}
+    .menu__desserts__price2 { @include menu_prices;}
+    //  DESSERTS-DESCRIPTIONS 3 //
+    .menu__desserts__desc3 { @include menu_descriptions;}
+    .menu__desserts__desc3 p { margin: 3px;}
+    .menu__desserts__desc3 a { text-decoration: none; color: black;}
+    .menu__desserts__price3 { @include menu_prices;}
+
+    // ANIMATION - Rolling check-icon //
+    .remplissage {
+        background-color: #99e2d0;
+        width: 0px;
+        position: absolute;
+        right: 0px;
+        padding: 17px 0px 17px 0px;
+        height: 100.5%;
+        bottom: 0px;
+        border-radius: 0px 15px 15px 0px;
+        transition: all 0.4s linear 0s;
+    }
+    .menu__description:hover .remplissage {
+        width: 60px;
+        padding: 17px 10px 17px 10px;
+    }
+    .price {
+        transition: all 0.4s linear 0s;
+    }
+    .menu__description:hover .price {
+        text-indent: -80px;
+    }
+    .remplissage-content:after {
+        content:"\f058";
+        font-family: FontAwesome;
+        font-size: 25px;
+        opacity: 0;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0px;
+        position: absolute;
+        right: 30px;
+        height: 100%;
+        bottom: 0px;
+        text-align: center;
+        animation: left-to-right 0.5s;
+        transition: opacity .6s;
+    }
+    .menu__description:hover .remplissage-content:after {
+      right: 30px;
+      opacity: 2;
+      animation: rolling 0.5s linear 0s;
+    }
+    @keyframes rolling {
+      0% {transform: translateX(30px) rotateZ(360deg);}
+      33% {transform: translateX(20px) rotateZ(300deg);}
+      66% {transform: translateX(10px) rotateZ(180deg);}
+      100% {transform: translateX(0px) rotateZ(0deg);}
+    }
+    @keyframes left-to-right {
+      0% {transform: translateX(0px) rotateZ(0deg);}
+      33% {transform: translateX(10px) rotateZ(180deg);}
+      66% {transform: translateX(20px) rotateZ(300deg);}
+      100% {transform: translateX(30px) rotateZ(360deg) scale(0px);}
+    }
+
+    // ANIMATION - Menu progressive appearance //
+    .menu__entree__desc1 {animation: fadein 1s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:1; }  }
+
+    .menu__entree__desc2 {animation: fadein 1.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:2; }  }
+
+    .menu__entree__desc3 {animation: fadein 2.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:3; }  }
+
+    .menu__plats__desc1 {animation: fadein 3.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:4; }  }
+
+    .menu__plats__desc2 {animation: fadein 4.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:5; }  }
+
+    .menu__plats__desc3 {animation: fadein 5.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:6; }  }
+
+    .menu__desserts__desc1 {animation: fadein 6.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:7; }  }
+
+    .menu__desserts__desc2 {animation: fadein 7.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:8; }  }
+
+    .menu__desserts__desc3 {animation: fadein 8.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:9; }  }
+
+}
+
+    // Section of button 'Commander' //
+    @include section-btn-commander;
+    
+    // FOOTER //
+    footer {
+    @include footer;
+    margin-top: 10px;
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0; }
+  }
+    }
