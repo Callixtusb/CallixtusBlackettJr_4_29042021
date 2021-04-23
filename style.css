@@ -90,6 +90,12 @@ header .header__logo {
           filter: drop-shadow(0px 7px 6px #0000002e);
 }
 
+.pitch__btn-nos-restos:hover {
+  background: #ff7ada;
+  -webkit-filter: drop-shadow(0px 12px 6px #0000002e);
+          filter: drop-shadow(0px 12px 6px #0000002e);
+}
+
 .choice {
   margin-top: 50px;
 }
@@ -130,6 +136,11 @@ header .header__logo {
   width: 100%;
   list-style-type: none;
   counter-reset: list;
+}
+
+.choice li:hover {
+  -webkit-filter: drop-shadow(10px 12px 10px #0000002e);
+          filter: drop-shadow(10px 12px 10px #0000002e);
 }
 
 .choice li {
@@ -482,8 +493,10 @@ header .header__logo {
 Footer {
   margin-top: -1.5em;
   margin-bottom: 0em;
-  padding-bottom: 2em;
+  padding-bottom: 5%;
   background-color: #353535;
+  position: absolute;
+  width: 100%;
 }
 
 Footer .footer__content__title {
