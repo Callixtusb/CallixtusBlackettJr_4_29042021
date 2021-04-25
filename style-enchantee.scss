@@ -12,12 +12,13 @@ body {
 }
 
 @include page_header;
+.backlink { color: black;}
+
 .header__wrapper {
-// Tablet portrait & Desktop ////////////////////////////
+// Tablet portrait & Desktop ////////////////////////
 @include breakpoint (laptop) {
     margin-left: -80px;
-    }
-    }
+    }    }
 
 @include pic-intro__content;
 
@@ -33,7 +34,6 @@ body {
     .menu__content {
     width: 90%;
     margin: auto;
-    
 
     // Tablet portrait & Desktop ////////////////////////////
     @include breakpoint (laptop) {
@@ -41,8 +41,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     }
-    }
+    }  }
     
     //Restanrants Page title//
     .menu__title-and-heart-bloc { @include menu__title-and-heart-bloc;
@@ -53,94 +52,30 @@ body {
     left: 60px;
        .menu__heart { 
        margin-left: 50px
-       }
-    }
-    }
+       }  }  }
     
-    // ENTRÉES //
-    .menu__content__entrees__list { @include menu_content_list;
+    // MENU CONTENT BLOCKS //
+    .menu__content__bloc {
+    // Tablet portrait & Desktop ////////////////////////////
+    @include breakpoint (laptop) {
+    width: 330px;     } }
+
+    .menu__content__list { @include menu_content_list;
     // Tablet portrait & Desktop ////////////////////////////
     @include breakpoint (laptop) {
     justify-self: flex-start;
     width: 100%;
-    margin-top: 30px;
-    }
-    }
-    .menu__entree__title { @include menu_titles;}
-    //  ENTRÉES-DESCRIPTIONS 1 //
-    .menu__entree__desc1 { @include menu_descriptions;}
-    .menu__entree__desc1 p { margin: 3px;}
-    .menu__entree__desc1 a { text-decoration: none; color: black;}
-    .menu__entree__price1 { @include menu_prices;}
-     //  ENTRÉES-DESCRIPTIONS 2 //
-    .menu__entree__desc2 { @include menu_descriptions;}
-    .menu__entree__desc2 p { margin: 3px;}
-    .menu__entree__desc2 a { text-decoration: none; color: black;}
-    .menu__entree__price2 { @include menu_prices;}
-    //  ENTRÉES-DESCRIPTIONS 3 //
-    .menu__entree__desc3 { @include menu_descriptions;}
-    .menu__entree__desc3 p { margin: 3px;}
-    .menu__entree__desc3 a { text-decoration: none; color: black;}
-    .menu__entree__price3 { @include menu_prices;}
-    //  ENTRÉES-DESCRIPTIONS 4 //
-    .menu__entree__desc4 { @include menu_descriptions;}
-    .menu__entree__desc4 p { margin: 3px;}
-    .menu__entree__desc4 a { text-decoration: none; color: black;}
-    .menu__entree__price4 { @include menu_prices;}
+    margin-top: 30px;  } }
 
+    //  MENU-DESCRIPTIONS //
+    .menu__title { @include menu_titles;}
+    .menu__desc { @include menu_descriptions;}
+    .menu__desc p { margin: 3px;}
+    .menu__desc a { text-decoration: none; color: black;}
+    .menu__price-bloc { @include menu_prices;}
 
-    // PLATS //
-    .menu__content__plats__list { @include menu_content_list;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-    justify-self: flex-start;
-    width: 100%;
-    margin-top: 30px;
-     }
-    }
-    .menu__plats__title { @include menu_titles;}
-    //  PLATS-DESCRIPTIONS 1 //
-    .menu__plats__desc1 { @include menu_descriptions;}
-    .menu__plats__desc1 p { margin: 3px;}
-    .menu__plats__desc1 a { text-decoration: none; color: black;}
-    .menu__plats__price1 { @include menu_prices;}
-    //  PLATS-DESCRIPTIONS 2 //
-    .menu__plats__desc2 { @include menu_descriptions;}
-    .menu__plats__desc2 p { margin: 3px;}
-    .menu__plats__desc2 a { text-decoration: none; color: black;}
-    .menu__plats__price2 { @include menu_prices;}
-    //  PLATS-DESCRIPTIONS 3 //
-    .menu__plats__desc3 { @include menu_descriptions;}
-    .menu__plats__desc3 p { margin: 3px;}
-    .menu__plats__desc3 a { text-decoration: none; color: black;}
-    .menu__plats__price3 { @include menu_prices;}
-    // DESSERTS //
-    .menu__content__desserts__list { @include menu_content_list;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-        justify-self: flex-start;
-        width: 100%;
-        margin-top: 30px;
-         }
-    }
-    .menu__desserts__title { @include menu_titles;}
-    //  DESSERTS-DESCRIPTIONS 1 //
-    .menu__desserts__desc1 { @include menu_descriptions;}
-    .menu__desserts__desc1 p { margin: 3px;}
-    .menu__desserts__desc1 a { text-decoration: none; color: black;}
-    .menu__desserts__price1 { @include menu_prices;}
-    //  DESSERTS-DESCRIPTIONS 2 //
-    .menu__desserts__desc2 { @include menu_descriptions;}
-    .menu__desserts__desc2 p { margin: 3px;}
-    .menu__desserts__desc2 a { text-decoration: none; color: black;}
-    .menu__desserts__price2 { @include menu_prices;}
-    //  DESSERTS-DESCRIPTIONS 3 //
-    .menu__desserts__desc3 { @include menu_descriptions;}
-    .menu__desserts__desc3 p { margin: 3px;}
-    .menu__desserts__desc3 a { text-decoration: none; color: black;}
-    .menu__desserts__price3 { @include menu_prices;}
-
-    // ANIMATION - Rolling check-icon //
+    // ANIMATION - ROLLING CHECH-ICON //
+         //Menu slab - Green cover indention//
     .remplissage {
         background-color: #99e2d0;
         width: 0px;
@@ -152,16 +87,30 @@ body {
         border-radius: 0px 15px 15px 0px;
         transition: all 0.4s linear 0s;
     }
-    .menu__description:hover .remplissage {
+    .menu__desc--animation:hover .remplissage {
         width: 60px;
         padding: 17px 10px 17px 10px;
     }
+
+         //Menu slab - Price indention//
     .price {
-        transition: all 0.4s linear 0s;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+	    transition: all 0.4s linear 0s;
     }
-    .menu__description:hover .price {
-        text-indent: -80px;
+    .menu__desc--animation:hover .price {
+        text-indent: 60px;
     }
+
+         //Menu slab - Text Ellipsis//
+       .menu__textdescription {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+
+        //Menu slab - Rolling Icon indention//
     .remplissage-content:after {
         content:"\f058";
         font-family: FontAwesome;
@@ -180,10 +129,10 @@ body {
         animation: left-to-right 0.5s;
         transition: opacity .6s;
     }
-    .menu__description:hover .remplissage-content:after {
-      right: 30px;
-      opacity: 2;
-      animation: rolling 0.5s linear 0s;
+    .menu__desc--animation:hover .remplissage-content:after {
+        right: 30px;
+        opacity: 2;
+        animation: rolling 0.5s linear 0s;
     }
     @keyframes rolling {
       0% {transform: translateX(30px) rotateZ(360deg);}
@@ -199,32 +148,8 @@ body {
     }
 
     // ANIMATION - Menu progressive appearance //
-    .menu__entree__desc1 {animation: fadein 1s;}
+    .menu__desc--animation {animation: fadein 1s;}
     @keyframes fadein {  from { opacity:0; } to { opacity:1; }  }
-
-    .menu__entree__desc2 {animation: fadein 1.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:2; }  }
-
-    .menu__entree__desc3 {animation: fadein 2.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:3; }  }
-
-    .menu__plats__desc1 {animation: fadein 3.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:4; }  }
-
-    .menu__plats__desc2 {animation: fadein 4.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:5; }  }
-
-    .menu__plats__desc3 {animation: fadein 5.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:6; }  }
-
-    .menu__desserts__desc1 {animation: fadein 6.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:7; }  }
-
-    .menu__desserts__desc2 {animation: fadein 7.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:8; }  }
-
-    .menu__desserts__desc3 {animation: fadein 8.5s;}
-    @keyframes fadein {  from { opacity:0; } to { opacity:9; }  }
 
 }
 
