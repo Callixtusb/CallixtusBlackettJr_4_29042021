@@ -364,7 +364,7 @@ header .header__content {
   }
 }
 
-.menu__wrapper .menu__desc--animation {
+.menu__wrapper .menu__content--entrees {
   -webkit-animation: fadein 1s;
           animation: fadein 1s;
 }
@@ -376,6 +376,34 @@ header .header__content {
   to {
     opacity: 1;
   }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu__wrapper .menu__content--plats {
+  -webkit-animation: fadein 2.5s;
+          animation: fadein 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu__wrapper .menu__content--desserts {
+  -webkit-animation: fadein 3.5s;
+          animation: fadein 3.5s;
 }
 
 @keyframes fadein {

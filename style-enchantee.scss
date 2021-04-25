@@ -148,7 +148,11 @@ body {
     }
 
     // ANIMATION - Menu progressive appearance //
-    .menu__desc--animation {animation: fadein 1s;}
+    .menu__content--entrees {animation: fadein 1s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:1; }  }
+    .menu__content--plats {animation: fadein 2.5s;}
+    @keyframes fadein {  from { opacity:0; } to { opacity:1; }  }
+    .menu__content--desserts {animation: fadein 3.5s;}
     @keyframes fadein {  from { opacity:0; } to { opacity:1; }  }
 
 }
