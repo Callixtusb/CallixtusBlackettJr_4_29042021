@@ -21,8 +21,7 @@ body {
   margin: auto;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, to(#fefefe));
-  background: linear-gradient(180deg, #fefefe 100%);
+  background: #fefefe;
 }
 
 #loader-wrapper .loader {
