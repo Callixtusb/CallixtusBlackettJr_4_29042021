@@ -127,15 +127,59 @@ header .header__content {
   font-weight: lighter;
 }
 
+.menu__wrapper .menu__title-and-heart-bloc .heart-filled:before {
+  content: "\f004";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 15.7px;
+  position: relative;
+  right: -.05px;
+  top: 17px;
+  color: #9c0202;
+  opacity: 0;
+  -webkit-transition: All 3s;
+  transition: All 3s;
+}
+
+.menu__wrapper .menu__title-and-heart-bloc .heart_inline:hover .heart-filled:before {
+  opacity: 1;
+}
+
+.menu__wrapper .menu__title-and-heart-bloc .heart_inline {
+  width: 30px;
+  position: absolute;
+  left: 220px;
+  top: 4px;
+}
+
+.menu__wrapper .menu__title-and-heart-bloc .heart_inline a {
+  text-decoration: none;
+}
+
+.menu__wrapper .menu__title-and-heart-bloc .fa-heart-o {
+  color: black;
+}
+
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc {
     position: absolute;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
     left: 60px;
   }
-  .menu__wrapper .menu__title-and-heart-bloc .menu__heart {
-    margin-left: 50px;
+  .menu__wrapper .menu__title-and-heart-bloc .heart_inline {
+    width: 30px;
+    position: absolute;
+    left: 220px;
+    top: 12px;
+  }
+}
+
+.menu__wrapper .menu__title-and-heart-bloc .heart_inline {
+  left: 290px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__wrapper .menu__title-and-heart-bloc .heart_inline {
+    left: 260px;
   }
 }
 

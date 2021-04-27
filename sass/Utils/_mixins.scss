@@ -161,6 +161,7 @@
     
     .heart_inline a {
        text-decoration: none;
+       color: black;
     }
     
     .heart-filled:before {
@@ -294,8 +295,6 @@
    }
   }
    
-   
-
 
   //Pages individuel des Restaurants)//
 
@@ -307,6 +306,54 @@
       .menu__page__title {
         font-family: $font-logo-and-titles;
         font-weight: lighter;}
+
+      .heart-filled:before {
+        content: "\f004";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 15.7px;
+        position: relative;
+        right: -.05px;
+        top: 17px;
+        color: #9c0202;
+        opacity: 0;
+        transition: All 3s;
+       }
+      
+      .heart_inline:hover .heart-filled:before {
+        opacity: 1;
+      }
+      
+      .heart_inline {
+        width: 30px;
+        position:absolute;
+        left: 220px;
+        top: 4px;
+      }
+      
+      .heart_inline a {
+        text-decoration: none;
+      }  
+
+      .fa-heart-o {
+        color: black;
+      }
+
+// Tablet portrait & Desktop ////////////////////////////
+@include breakpoint (laptop) {
+  position: absolute;
+  left: 60px;
+  .heart_inline {
+      width: 30px;
+      position:absolute;
+      left: 220px;
+      top: 12px;
+    }
+    } 
+
+
+
+
   }
 
   @mixin menu_content_list {

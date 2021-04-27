@@ -481,6 +481,7 @@ header .header__logo {
 
 .restaurants__text_heart_bloc .heart_inline a {
   text-decoration: none;
+  color: black;
 }
 
 .restaurants__text_heart_bloc .heart-filled:before {

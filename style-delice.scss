@@ -43,16 +43,21 @@ body {
     justify-content: space-evenly;
     }  }
     
-    //Restanrants Page title//
-    .menu__title-and-heart-bloc { @include menu__title-and-heart-bloc;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-    position: absolute;
-    align-self: flex-start;
-    left: 60px;
-       .menu__heart { 
-       margin-left: 50px
-       }  }  }
+   //Restanrants Page title//
+   .menu__title-and-heart-bloc { @include menu__title-and-heart-bloc;
+
+    .heart_inline {
+        left: 270px;
+      }
+
+   // Tablet portrait & Desktop ////////////////////////////
+   @include breakpoint (laptop) {
+
+   .heart_inline {
+    left: 260px;
+    }
+    } 
+    }
     
     // MENU CONTENT BLOCKS //
     .menu__content__bloc {
