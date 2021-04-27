@@ -434,15 +434,16 @@ header .header__logo {
   }
 }
 
-.restaurants__la-palette-du-gout {
+.restaurants__card {
   width: 90%;
-  height: 143px;
-  margin-bottom: 20px;
+  height: 240px;
   position: relative;
+  overflow: hidden;
+  margin-bottom: -65px;
 }
 
 @media screen and (min-width: 768px) {
-  .restaurants__la-palette-du-gout {
+  .restaurants__card {
     width: 40%;
   }
 }
@@ -459,21 +460,8 @@ header .header__logo {
 }
 
 .restaurants__text_heart_bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #ffff;
-  padding: 20px 15px 10px 15px;
+  padding: 20px 15px 20px 15px;
   height: 80px;
   width: 99.9%;
   -webkit-box-shadow: 0 0 25px -15px #444444;
@@ -484,7 +472,40 @@ header .header__logo {
   color: black;
 }
 
-.restaurants__nouveau {
+.restaurants__text_heart_bloc .heart_inline {
+  width: 30px;
+  position: absolute;
+  right: 0px;
+  top: 163px;
+}
+
+.restaurants__text_heart_bloc .heart_inline a {
+  text-decoration: none;
+}
+
+.restaurants__text_heart_bloc .heart-filled:before {
+  content: "\f004";
+  font-family: 'Font Awesome 5 Free';
+  font-size: 15.7px;
+  font-weight: 900;
+  position: relative;
+  right: -.05px;
+  top: 22px;
+  color: #9c0202;
+  opacity: 0;
+  -webkit-transition: All 3s;
+  transition: All 3s;
+}
+
+.restaurants__text_heart_bloc .heart_inline:hover .heart-filled:before {
+  opacity: 1;
+}
+
+.restaurants__text_heart_bloc .card_text {
+  margin: 0px;
+}
+
+.restaurants__nouveau--tck1 {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
@@ -497,59 +518,10 @@ header .header__logo {
           filter: drop-shadow(0px 3px 2px #4444442e);
   border-radius: 3px 3px 3px 3px;
   position: absolute;
+  opacity: 1;
 }
 
-.restaurants__la-note-enchantee {
-  width: 90%;
-  height: 143px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurants__la-note-enchantee {
-    width: 40%;
-  }
-}
-
-.restaurants__pic {
-  width: 100%;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 48% 55%;
-     object-position: 48% 55%;
-  margin-bottom: -10px;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.restaurants__text_heart_bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffff;
-  padding: 20px 15px 10px 15px;
-  height: 80px;
-  width: 99.9%;
-  -webkit-box-shadow: 0 0 25px -15px #444444;
-          box-shadow: 0 0 25px -15px #444444;
-  border-radius: 0px 0px 15px 15px;
-  line-height: 1.4;
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants__nouveau {
+.restaurants__nouveau--tck2 {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
@@ -562,59 +534,10 @@ header .header__logo {
           filter: drop-shadow(0px 3px 2px #4444442e);
   border-radius: 3px 3px 3px 3px;
   position: absolute;
+  opacity: 1;
 }
 
-.restaurants__a-la-francaise {
-  width: 90%;
-  height: 143px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurants__a-la-francaise {
-    width: 40%;
-  }
-}
-
-.restaurants__pic {
-  width: 100%;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 48% 55%;
-     object-position: 48% 55%;
-  margin-bottom: -10px;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.restaurants__text_heart_bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffff;
-  padding: 20px 15px 10px 15px;
-  height: 80px;
-  width: 99.9%;
-  -webkit-box-shadow: 0 0 25px -15px #444444;
-          box-shadow: 0 0 25px -15px #444444;
-  border-radius: 0px 0px 15px 15px;
-  line-height: 1.4;
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants__nouveau--no {
+.restaurants__nouveau--tck3 {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
@@ -630,57 +553,7 @@ header .header__logo {
   opacity: 0;
 }
 
-.restaurants__le-delice-des-sens {
-  width: 90%;
-  height: 143px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .restaurants__le-delice-des-sens {
-    width: 40%;
-  }
-}
-
-.restaurants__pic {
-  width: 100%;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 48% 55%;
-     object-position: 48% 55%;
-  margin-bottom: -10px;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.restaurants__text_heart_bloc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffff;
-  padding: 20px 15px 10px 15px;
-  height: 80px;
-  width: 99.9%;
-  -webkit-box-shadow: 0 0 25px -15px #444444;
-          box-shadow: 0 0 25px -15px #444444;
-  border-radius: 0px 0px 15px 15px;
-  line-height: 1.4;
-  text-decoration: none;
-  color: black;
-}
-
-.restaurants__nouveau--no {
+.restaurants__nouveau--tck4 {
   font-size: .85em;
   position: absolute;
   background-color: #99e2d0;
