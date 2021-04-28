@@ -13,7 +13,7 @@ font-family: $font-text;
 
 // ANIMATION - LOADER //
 #loader-wrapper {
-animation: homepage-fade-in 7.7s;
+animation: homepage-fade-in 4s;
   animation-iteration-count: 1;
   opacity: 0;
 }
@@ -65,8 +65,8 @@ animation: homepage-fade-in 7.7s;
 
    .covers span {
      background: linear-gradient(180deg, white 0, white 100%);
-     animation: up 2s infinite;
-     animation-iteration-count: 3;
+     animation: up 1.7s infinite;
+     animation-iteration-count: 2;
     }
 
    @keyframes up {
@@ -87,8 +87,15 @@ animation: homepage-fade-in 7.7s;
 @keyframes homepage-fade-in {
   0% { opacity: 1; z-index: 800;}
   50% { opacity: 1; z-index: 800;}
+  70% { opacity: 1; z-index: 800;}
   75% { opacity: 1; z-index: 800;}
-  85% { opacity: 1; z-index: 800;} 
+  80% { opacity: 1; z-index: 800;}
+  90% { opacity: 1; z-index: 800;}
+  95% { opacity: 1; z-index: 800;}
+  96% { opacity: 1; z-index: 800;}
+  97% { opacity: 1; z-index: 800;}
+  98% { opacity: 1; z-index: 800;}
+  99% { opacity: 1; z-index: 800;}
   100% { opacity: 0; z-index: 800;}
 }
 
