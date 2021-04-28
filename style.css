@@ -9,8 +9,8 @@ body {
 }
 
 #loader-wrapper {
-  -webkit-animation: homepage-fade-in 4s;
-          animation: homepage-fade-in 4s;
+  -webkit-animation: homepage-fade-in 4.5s;
+          animation: homepage-fade-in 4.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   opacity: 0;
@@ -29,32 +29,24 @@ body {
   margin: 0 auto;
   top: 40%;
   width: 350px;
-  color: white;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 250%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF79DA), to(#444));
-  background: linear-gradient(180deg, #FF79DA 30%, #444 100%);
-  -webkit-box-shadow: inset 0 5px 20px black;
-          box-shadow: inset 0 5px 20px black;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#loader-wrapper .loader:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#loader-wrapper span {
+#loader-wrapper .loader span {
   float: left;
   height: 100px;
   line-height: 120px;
   width: 50px;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 250%;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF79DA), to(#444));
+  background: linear-gradient(180deg, #FF79DA 30%, #444 100%);
 }
 
 #loader-wrapper .loader > span {
-  border-left: 1px solid #444;
-  border-right: 1px solid #222;
+  border-left: .2px solid #444;
+  border-right: .2px solid #222;
 }
 
 #loader-wrapper .covers {
@@ -64,74 +56,65 @@ body {
 }
 
 #loader-wrapper .covers span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), to(#fefefe));
-  background: linear-gradient(180deg, #fefefe 0, #fefefe 100%);
-  -webkit-animation: up 1.7s infinite;
-          animation: up 1.7s infinite;
+  background: #fefefe;
+  -webkit-animation: down 1.8s infinite;
+          animation: down 1.8s infinite;
   -webkit-animation-iteration-count: 2;
           animation-iteration-count: 2;
 }
 
-@-webkit-keyframes up {
+@-webkit-keyframes down {
   0% {
-    margin-bottom: 0;
   }
-  16% {
-    margin-bottom: 100%;
-    height: 20px;
+  15% {
+    height: 10px;
   }
   50% {
-    margin-bottom: 0;
   }
   100% {
-    margin-bottom: 0;
   }
 }
 
-@keyframes up {
+@keyframes down {
   0% {
-    margin-bottom: 0;
   }
-  16% {
-    margin-bottom: 100%;
-    height: 20px;
+  15% {
+    height: 10px;
   }
   50% {
-    margin-bottom: 0;
   }
   100% {
-    margin-bottom: 0;
   }
 }
 
 #loader-wrapper .covers span:nth-child(2) {
-  -webkit-animation-delay: .142857s;
-          animation-delay: .142857s;
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
 }
 
 #loader-wrapper .covers span:nth-child(3) {
-  -webkit-animation-delay: .285714s;
-          animation-delay: .285714s;
+  -webkit-animation-delay: .28s;
+          animation-delay: .28s;
 }
 
 #loader-wrapper .covers span:nth-child(4) {
-  -webkit-animation-delay: .428571s;
-          animation-delay: .428571s;
+  -webkit-animation-delay: .42s;
+          animation-delay: .42s;
 }
 
 #loader-wrapper .covers span:nth-child(5) {
-  -webkit-animation-delay: .571428s;
-          animation-delay: .571428s;
+  -webkit-animation-delay: .57s;
+          animation-delay: .57s;
 }
 
 #loader-wrapper .covers span:nth-child(6) {
-  -webkit-animation-delay: .714285s;
-          animation-delay: .714285s;
+  -webkit-animation-delay: .71s;
+          animation-delay: .71s;
 }
 
 #loader-wrapper .covers span:nth-child(7) {
-  -webkit-animation-delay: .857142s;
-          animation-delay: .857142s;
+  -webkit-animation-delay: .85s;
+          animation-delay: .85s;
 }
 
 @-webkit-keyframes homepage-fade-in {
