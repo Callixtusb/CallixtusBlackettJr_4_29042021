@@ -64,8 +64,8 @@ body {
 }
 
 #loader-wrapper .covers span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, white), to(white));
-  background: linear-gradient(180deg, white 0, white 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fefefe), to(#fefefe));
+  background: linear-gradient(180deg, #fefefe 0, #fefefe 100%);
   -webkit-animation: up 1.7s infinite;
           animation: up 1.7s infinite;
   -webkit-animation-iteration-count: 2;
@@ -316,12 +316,16 @@ header .header__logo {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
   -webkit-filter: drop-shadow(0px 7px 6px #0000002e);
           filter: drop-shadow(0px 7px 6px #0000002e);
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
 }
 
 .pitch__btn-nos-restos:hover {
   background: #ff7ada;
-  -webkit-filter: drop-shadow(0px 12px 6px #0000002e);
-          filter: drop-shadow(0px 12px 6px #0000002e);
+  -webkit-filter: drop-shadow(0px 12px 6px #272727);
+          filter: drop-shadow(0px 12px 6px #272727);
 }
 
 .choice {
@@ -460,6 +464,12 @@ header .header__logo {
   background-color: #f6f6f6;
   padding-top: 1.75em;
   padding-bottom: 8em;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__wrapper {
+    border-radius: 40px 40px 0px 0px;
+  }
 }
 
 .restaurants h1 {
@@ -690,6 +700,26 @@ Footer ul .footer__hands-helping {
 Footer ul .footer__contact {
   text-decoration: none;
   color: #ffff;
+}
+
+@media screen and (min-width: 768px) {
+  Footer ul ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    max-width: 1224px;
+  }
 }
 
 @media screen and (min-width: 768px) {

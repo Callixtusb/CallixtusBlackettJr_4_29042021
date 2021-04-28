@@ -43,22 +43,37 @@ body {
     justify-content: space-evenly;
     }  }
     
-   //Restanrants Page title//
-   .menu__title-and-heart-bloc { @include menu__title-and-heart-bloc;
+    //Restanrants Page title//
+    .menu__title-and-heart-bloc--palette { @include menu__title-and-heart-bloc;
+        .heart_inline--palette {  left: 270px;  }
 
-    .heart_inline {
-        left: 270px;
-      }
+         // Tablet portrait & Desktop ////////////////////////////
+         @include breakpoint (laptop) {
+        .heart_inline--palette {  left: 270px;  }
+      }  }
+    .menu__title-and-heart-bloc--enchantee { @include menu__title-and-heart-bloc;
+        .heart_inline--enchantee {  left: 290px;  }
 
-   // Tablet portrait & Desktop ////////////////////////////
-   @include breakpoint (laptop) {
+         // Tablet portrait & Desktop ////////////////////////////
+         @include breakpoint (laptop) {
+        .heart_inline--enchantee {  left: 260px;  }
+      }  }
+    .menu__title-and-heart-bloc--francaise { @include menu__title-and-heart-bloc;
+        .heart_inline--francaise {  left: 260px;  }
 
-   .heart_inline {
-    left: 260px;
-    }
-    } 
-    }
-    
+         // Tablet portrait & Desktop ////////////////////////////
+         @include breakpoint (laptop) {
+        .heart_inline--francaise {  left: 230px;  }
+      }  }
+    .menu__title-and-heart-bloc--delice { @include menu__title-and-heart-bloc;
+        .heart_inline--delice {  left: 260px;  }
+
+         // Tablet portrait & Desktop ////////////////////////////
+         @include breakpoint (laptop) {
+        .heart_inline--delice {  left: 230px;  }
+      }  }
+
+
     // MENU CONTENT BLOCKS //
     .menu__content__bloc {
     // Tablet portrait & Desktop ////////////////////////////
@@ -169,13 +184,5 @@ body {
     footer {
     @include footer;
     margin-top: 10px;
-    // Tablet portrait & Desktop ////////////////////////////
-    @include breakpoint (laptop) {
-    ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 0; }
-  }
+    
     }

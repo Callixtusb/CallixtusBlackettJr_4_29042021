@@ -36,7 +36,6 @@ animation: homepage-fade-in 4s;
      background: linear-gradient(180deg, #FF79DA 30%, #444 100%);
      box-shadow: inset 0 5px 20px black;
      text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    
     }
 
    .loader:after {
@@ -64,7 +63,7 @@ animation: homepage-fade-in 4s;
     }
 
    .covers span {
-     background: linear-gradient(180deg, white 0, white 100%);
+     background: linear-gradient(180deg, #fefefe 0, #fefefe 100%);
      animation: up 1.7s infinite;
      animation-iteration-count: 2;
     }
@@ -148,11 +147,12 @@ header {
     
   &__btn-nos-restos {
     @include btn-execusion;
+    transition: filter 1s;
    }  
 
    &__btn-nos-restos:hover {
-    background:lighten($secondary-color, 0.2%);
-    filter: drop-shadow(0px 12px 6px #0000002e);
+    background:lighten($secondary-color, 0.1%);
+    filter: drop-shadow(0px 12px 6px rgb(39, 39, 39));
   }
  }
 
@@ -258,6 +258,12 @@ header {
       padding-top: 1.75em;
       padding-bottom: 8em;
       }
+      
+    &__wrapper {
+      // Tablet portrait & Desktop ////////////////////////////
+      @include breakpoint (laptop) {
+        border-radius: 40px 40px 0px 0px; }
+      } 
       
       h1{      
       margin-left: 5%;
