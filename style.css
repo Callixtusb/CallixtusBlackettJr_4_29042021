@@ -636,6 +636,14 @@ Footer {
   width: 100%;
 }
 
+Footer .footer__wrapper {
+  max-width: 1224px;
+  margin: auto;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
 Footer .footer__content__title {
   font-family: "Shrikhand", cursive;
   margin-left: 5%;
@@ -691,26 +699,6 @@ Footer ul .footer__hands-helping {
 Footer ul .footer__contact {
   text-decoration: none;
   color: #ffff;
-}
-
-@media screen and (min-width: 768px) {
-  Footer ul ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 0;
-    max-width: 1224px;
-  }
 }
 
 @media screen and (min-width: 768px) {

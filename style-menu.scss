@@ -181,8 +181,37 @@ body {
     @include section-btn-commander;
     
     // FOOTER //
-    footer {
-    @include footer;
-    margin-top: 10px;
-    
+Footer {
+  @include footer;
+  // Tablet portrait & Desktop - 768 and up ////////////////////////////
+  @include breakpoint (laptop) {
+    ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
     }
+  }
+
+  }
+
+  .menu__wrapper {
+    // Tablet portrait & Desktop - 1099 and up ////////////////////////////
+    @include breakpoint (laptop1099) {
+      
+      height: 508px;
+  
+      }
+  
+     }
+
+     .btn__commander__wrapper {
+      // Tablet portrait & Desktop - 1099 and up ////////////////////////////
+      @include breakpoint (laptop1099) {
+        
+        margin-bottom: 2px;
+    
+        }
+    
+       }
