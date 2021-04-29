@@ -13,7 +13,7 @@ font-family: $font-text;
 
 // ANIMATION - LOADER //
 #loader-wrapper {
-  animation: homepage-fade-in 4.48s;
+  animation: homepage-fade-in 6.3s;
   animation-iteration-count: 1;
   opacity: 0;
 }
@@ -38,7 +38,7 @@ font-family: $font-text;
       line-height: 120px;
       width: 50px;
       color: white;
-      font-family: $font-logo-and-titles;
+      font-family: $font-text;
       font-size: 250%;
       text-shadow: 5px 5px 5px rgba(0,0,0,.5);
       background: linear-gradient(180deg, #FF79DA 30%, #444 100%);
@@ -58,7 +58,7 @@ font-family: $font-text;
    .covers span {
      background: #fefefe;
      animation: up 1.8s infinite;
-     animation-iteration-count: 2;
+     animation-iteration-count: 3;
     }
 
     @keyframes up {

@@ -9,8 +9,8 @@ body {
 }
 
 #loader-wrapper {
-  -webkit-animation: homepage-fade-in 4.48s;
-          animation: homepage-fade-in 4.48s;
+  -webkit-animation: homepage-fade-in 6.3s;
+          animation: homepage-fade-in 6.3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   opacity: 0;
@@ -37,7 +37,7 @@ body {
   line-height: 120px;
   width: 50px;
   color: white;
-  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 250%;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FF79DA), to(#444));
@@ -59,8 +59,8 @@ body {
   background: #fefefe;
   -webkit-animation: up 1.8s infinite;
           animation: up 1.8s infinite;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 @-webkit-keyframes up {
