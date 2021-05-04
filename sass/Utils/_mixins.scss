@@ -77,8 +77,9 @@
     border: 0px;
     background-color: #f8ebfc;
     border-radius: 20px 0px 0px 20px;
-    padding: 21px 10px 22px 25px; 
+    padding: 21px 10px 22px 25px;
   }
+
   @mixin btn-fonctionnement-std {
     text-decoration: none;
     color: black;
@@ -175,7 +176,7 @@
         position: relative;
         right: -.05px;
         top: 22px;
-        color: #9c0202;
+        color: $secondary-color;
         opacity: 0;
         transition: All 3s;
      }
@@ -327,8 +328,8 @@
         font-size: 15.7px;
         position: relative;
         right: -.05px;
-        top: 17px;
-        color: #9c0202;
+        top: 19px;
+        color: $secondary-color;
         opacity: 0;
         transition: All 3s;
        }

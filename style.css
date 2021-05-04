@@ -362,14 +362,16 @@ header .header__logo {
 }
 
 .choice li:hover {
-  -webkit-filter: drop-shadow(10px 12px 10px #0000002e);
-          filter: drop-shadow(10px 12px 10px #0000002e);
+  -webkit-filter: drop-shadow(10px 12px 10px #0800002e);
+          filter: drop-shadow(10px 12px 10px #0800002e);
 }
 
 .choice li {
   counter-increment: list;
   -webkit-filter: drop-shadow(0px 3px 6px #4444442e);
           filter: drop-shadow(0px 3px 6px #4444442e);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice li::before {
@@ -392,6 +394,8 @@ header .header__logo {
   background-color: #f6f6f6;
   border-radius: 20px 0px 0px 20px;
   padding: 21px 10px 22px 25px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice__restaurant {
@@ -403,6 +407,8 @@ header .header__logo {
   border-radius: 0px 20px 20px 0px;
   padding: 20px 55px 20px 10px;
   margin-left: -2%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice .fa-list-ul {
@@ -411,6 +417,8 @@ header .header__logo {
   background-color: #f6f6f6;
   border-radius: 20px 0px 0px 20px;
   padding: 21px 10px 22px 25px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice__menu {
@@ -422,14 +430,18 @@ header .header__logo {
   border-radius: 0px 20px 20px 0px;
   padding: 20px 55px 20px 10px;
   margin-left: -2%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice .fa-store {
-  color: #9356DC;
+  color: #7e7e7e;
   border: 0px;
-  background-color: #f8ebfc;
+  background-color: #f6f6f6;
   border-radius: 20px 0px 0px 20px;
   padding: 21px 10px 22px 25px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .choice__deguster {
@@ -437,10 +449,66 @@ header .header__logo {
   color: black;
   font-weight: 600;
   border: 0px;
-  background-color: #f8ebfc;
+  background-color: #f6f6f6;
   border-radius: 0px 20px 20px 0px;
   padding: 20px 55px 20px 10px;
   margin-left: -2%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.choice .fa-mobile-alt:hover {
+  background-color: #f8ebfc;
+  color: #9356DC;
+}
+
+.choice li:hover .choice__restaurant {
+  background-color: #f8ebfc;
+}
+
+.choice .choice__restaurant:hover {
+  background-color: #f8ebfc;
+}
+
+.choice li:hover .fa-mobile-alt {
+  background-color: #f8ebfc;
+  color: #9356DC;
+}
+
+.choice .fa-list-ul:hover {
+  background-color: #f8ebfc;
+  color: #9356DC;
+}
+
+.choice li:hover .choice__menu {
+  background-color: #f8ebfc;
+}
+
+.choice .choice__menu:hover {
+  background-color: #f8ebfc;
+}
+
+.choice li:hover .fa-list-ul {
+  background-color: #f8ebfc;
+  color: #9356DC;
+}
+
+.choice .fa-store:hover {
+  background-color: #f8ebfc;
+  color: #9356DC;
+}
+
+.choice li:hover .choice__deguster {
+  background-color: #f8ebfc;
+}
+
+.choice .choice__deguster:hover {
+  background-color: #f8ebfc;
+}
+
+.choice li:hover .fa-store {
+  background-color: #f8ebfc;
+  color: #9356DC;
 }
 
 .restaurants {
@@ -549,7 +617,7 @@ header .header__logo {
   position: relative;
   right: -.05px;
   top: 22px;
-  color: #9c0202;
+  color: #FF79DA;
   opacity: 0;
   -webkit-transition: All 3s;
   transition: All 3s;
