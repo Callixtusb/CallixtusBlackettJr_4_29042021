@@ -62,33 +62,90 @@ body {
     }
 
     @keyframes up {
-      0% { margin-bottom: 0; }
-      16%  { margin-bottom: 100%; height: 20px; }
-      50%  { margin-bottom: 0; }
-      100%  { margin-bottom: 0; }
+      0% { 
+         margin-bottom: 0; 
+      }
+      16% { 
+         margin-bottom: 100%; 
+         height: 20px; 
+      }
+      50% { 
+         margin-bottom: 0; 
+      }
+      100% { 
+        margin-bottom: 0; 
+      }
    }
 
-    .covers span:nth-child(2) { animation-delay: .14s; }
-    .covers span:nth-child(3) { animation-delay: .28s; }
-    .covers span:nth-child(4) { animation-delay: .42s; }
-    .covers span:nth-child(5) { animation-delay: .57s; }
-    .covers span:nth-child(6) { animation-delay: .71s; }
-    .covers span:nth-child(7) { animation-delay: .85s; }
+    .covers span:nth-child(2) { 
+        animation-delay: .14s; 
+    }
+    .covers span:nth-child(3) { 
+        animation-delay: .28s; 
+    }
+    .covers span:nth-child(4) { 
+        animation-delay: .42s; 
+    }
+    .covers span:nth-child(5) { 
+        animation-delay: .57s; 
+    }
+    .covers span:nth-child(6) { 
+        animation-delay: .71s; 
+    }
+    .covers span:nth-child(7) { 
+        animation-delay: .85s; 
+    }
 }
 
 @keyframes homepage-fade-in {
-  0% { opacity: 1; z-index: 800;}
-  50% { opacity: 1; z-index: 800;}
-  70% { opacity: 1; z-index: 800;}
-  75% { opacity: 1; z-index: 800;}
-  80% { opacity: 1; z-index: 800;}
-  90% { opacity: 1; z-index: 800;}
-  95% { opacity: 1; z-index: 800;}
-  96% { opacity: 1; z-index: 800;}
-  97% { opacity: 1; z-index: 800;}
-  98% { opacity: 1; z-index: 800;}
-  99% { opacity: 1; z-index: 800;}
-  100% { opacity: 0; z-index: 800;}
+   0% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   50% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   70% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   75% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   80% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   90% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   95% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   96% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   97% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   98% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   99% { 
+      opacity: 1; 
+      z-index: 800;
+   }
+   100% { 
+      opacity: 0; 
+      z-index: 800;
+   }
 }
 
 // HEADER //

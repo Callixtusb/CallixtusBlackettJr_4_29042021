@@ -1,30 +1,31 @@
-//Breakpoints//
-@mixin breakpoint ($point) {
-    @if $point == laptop {
-        @media screen and (min-width: 768px) { @content; }
+  //Breakpoints//
+  @mixin breakpoint ($point) {
+      @if $point == laptop {
+          @media screen and (min-width: 768px) { @content; }
+      }
+      @if $point == laptop1099 {
+        @media screen and (min-width: 1099px) { @content; }
     }
-    @if $point == laptop1099 {
-      @media screen and (min-width: 1099px) { @content; }
   }
-}
 
-//Header//
-@mixin header {
+  //Header//
+  @mixin header {
     background-color: $title-bkgnd-color;
     padding: 25px 0px 16px 0px;
     position: relative;
     -webkit-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     -moz-box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
     box-shadow: 0px 6px 9px -5px rgba(153,153,153,1);
+
      .header__logo {
       display: block;
       margin-left: auto;
       margin-right: auto;
- }
-}
+     }
+  }
 
-//Bouton - Couleurs gradients + boutton d'execusion//
-@mixin btn-gradient-color {
+  //Bouton - Couleurs gradients + boutton d'execusion//
+  @mixin btn-gradient-color {
     background: $secondary-color;
     background: -moz-linear-gradient(top, #FF79DA 0%, #FF79DA 46%, #9356DC 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #FF79DA), color-stop(46%, #FF79DA), color-stop(100%, #9356DC));
@@ -35,7 +36,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF79DA', endColorstr='#9356DC', GradientType=0 );
   }
 
-@mixin btn-execusion {
+  @mixin btn-execusion {
     border: 0px;
     border-radius: 30px 30px 30px 30px;
     padding: 10px 20px;
@@ -43,9 +44,9 @@
     text-decoration: none;
     @include btn-gradient-color;
     filter: drop-shadow(0px 7px 6px #0000002e);
-}
+  }
 
-@mixin background-gradient-color-pitch {
+  @mixin background-gradient-color-pitch {
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(67%, #f6f6f6), color-stop(100%, #f2f2f2));
@@ -54,12 +55,13 @@
     background: -ms-linear-gradient(top, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 67%, #f2f2f2 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0 );
-}
+  }
 
-//Drop-shadow pour bouttons de selectionsss//
-@mixin Drop-shadow-pour-btn-de-selection {
+  //Drop-shadow pour bouttons de selectionsss//
+  @mixin Drop-shadow-pour-btn-de-selection {
     filter: drop-shadow(0px 3px 6px #4444442e);
-}
+  }
+
   //Bouton de rubrique Fonctionnement (page d'accueil)//
   @mixin btn-fonctionnement-active {
     text-decoration: none;
@@ -104,26 +106,35 @@
   @mixin restaurants__card {
     &__card {
       @include card-resto-general;   
-     // Tablet portrait & Desktop ////////////////////////////
-     @include breakpoint (laptop) {
-        width: 40%; }
-     }
-    &__pic {@include card-resto-pic;}
-    &__text_heart_bloc {@include card-resto-text-heart-bloc;}
+      // Tablet portrait & Desktop ////////////////////////////
+      @include breakpoint (laptop) {
+      width: 40%; 
+    }
+    }
+    &__pic {
+      @include card-resto-pic;
+    }
+    &__text_heart_bloc {
+      @include card-resto-text-heart-bloc;
+    }
 
 
     &__nouveau--tck1 {
       @include card-resto-etiquette_nouveau;
-      position: absolute; opacity: 1;   }
+      position: absolute; opacity: 1;   
+    }
     &__nouveau--tck2 {
       @include card-resto-etiquette_nouveau;
-      position: absolute; opacity: 1;   }
+      position: absolute; opacity: 1;   
+    }
     &__nouveau--tck3 {
       @include card-resto-etiquette_nouveau;
-      position: absolute; opacity: 0;   }
+      position: absolute; opacity: 0;   
+    }
     &__nouveau--tck4 {
       @include card-resto-etiquette_nouveau;
-      position: absolute; opacity: 0;   }            
+      position: absolute; opacity: 0;   
+    }            
   }
 
   
@@ -176,7 +187,7 @@
         position: relative;
         right: -.05px;
         top: 22px;
-        color: $secondary-color;
+        color: $primary-color;
         opacity: 0;
         transition: All 3s;
      }
@@ -187,7 +198,7 @@
 
     .card_text {
       margin: 0px;
-  }
+    }
 
   }
   
@@ -203,16 +214,15 @@
     filter: drop-shadow(0px 3px 2px #4444442e);
     border-radius: 3px 3px 3px 3px;
   }
-  
 
   //Footer - (All pages)//
   @mixin footer {
-      margin-top: -1.5em;
-      margin-bottom: 0em;
-      padding-bottom: 5%;
-      background-color: $footer-bkgnd-color;
-      position: absolute;
-      width: 100%;
+    margin-top: -1.5em;
+    margin-bottom: 0em;
+    padding-bottom: 5%;
+    background-color: $footer-bkgnd-color;
+    position: absolute;
+    width: 100%;
       
     .footer__wrapper {
       max-width: 1224px;
@@ -223,46 +233,45 @@
     }
 
     .footer__content__title {
-       font-family: $font-logo-and-titles;
-       margin-left: 5%;
-       font-size: 1.1em;
-       font-weight: 100;
-       color: #ffff;
-       padding-top: 1.2em;
-       }
+      font-family: $font-logo-and-titles;
+      margin-left: 5%;
+      font-size: 1.1em;
+      font-weight: 100;
+      color: #ffff;
+      padding-top: 1.2em;
+    }
      
        
     ul {
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-start;
-         margin: 0;
-         list-style-type: none;
-         color: #ffff;
-         margin-bottom: 0;
-         padding-left: 5%;
-         line-height: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      list-style-type: none;
+      color: #ffff;
+      margin-bottom: 0;
+      padding-left: 5%;
+      line-height: 0;
 
-          .footer__utensils {
+         .footer__utensils {
            display: flex;
            flex-wrap: wrap;
            align-items: center;
            gap: 12px;
-           }
+         }
   
-          .footer__hands-helping {
+         .footer__hands-helping {
            display: flex;
            flex-wrap: wrap;
            align-items: center;
            gap: 12px;
-           }
+         }
   
-          .footer__contact {
+         .footer__contact {
            text-decoration: none;
            color: #ffff;
-           }
-       
-       }           
+         }
+    }           
   }
   
 
@@ -286,26 +295,26 @@
       position: relative;
 
       .pic-intro__picture {
-      width: 100%;
-      object-fit: cover;
-      object-position: 48% 55%;
-      height: 220px;
-      margin: 0;
-      
+        width: 100%;
+        object-fit: cover;
+        object-position: 48% 55%;
+        height: 220px;
+        margin: 0;
       }
+
       .menu__title__bkgnd {
-          width: 100%;
-          display: block;
-          margin-top: -35px;
-          background-color: $primary-bkgnd-color;
-          padding: 12px 0px 25px 0px;
-          border-radius: 40px 40px 0px 0px;
-          position: absolute;
-          max-width: 1224px;
-          top: 109%;  
-          left: 50%; 
-          transform: translate(-50%, -50%);
-          }
+        width: 100%;
+        display: block;
+        margin-top: -35px;
+        background-color: $primary-bkgnd-color;
+        padding: 12px 0px 25px 0px;
+        border-radius: 40px 40px 0px 0px;
+        position: absolute;
+        max-width: 1224px;
+        top: 109%;  
+        left: 50%; 
+        transform: translate(-50%, -50%);
+      }
    }
   }
    
@@ -314,9 +323,8 @@
 
   @mixin menu__title-and-heart-bloc {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-top: -40px;
+
       .menu__page__title {
         font-family: $font-logo-and-titles;
         font-weight: lighter;}
@@ -329,10 +337,10 @@
         position: relative;
         right: -.05px;
         top: 19px;
-        color: $secondary-color;
+        color: $primary-color;
         opacity: 0;
-        transition: All 3s;
-       }
+        transition: All 2s;
+      }
       
       .heart_inline:hover .heart-filled:before {
         opacity: 1;
@@ -353,18 +361,22 @@
         color: black;
       }
 
-// Tablet portrait & Desktop ////////////////////////////
-@include breakpoint (laptop) {
-  position: absolute;
-  left: 60px;
-  .heart_inline {
-      width: 30px;
-      position:absolute;
-      left: 220px;
-      top: 12px;
-    }
-    } 
-
+      // Tablet portrait & Desktop ////////////////////////////
+      @include breakpoint (laptop) {
+        position: relative;
+        width: 100%;
+        left: 35px;
+      
+      .spacing {
+        width: 100%;
+      }
+      
+      .heart_inline {
+        width: 30px;
+        position: relative;
+        top: 12px;
+      }
+      } 
   }
 
   @mixin menu_content_list {
@@ -373,8 +385,9 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px;
-    margin-top: 2px;
+    margin-top: 30px;
   }
+
   @mixin menu_titles {
     justify-self: start;
     align-self: start;
@@ -404,7 +417,6 @@
     padding-right: 12px;
   }
 
-
   @mixin section-btn-commander {
     .btn__commander__wrapper {
       background-color: $primary-bkgnd-color;
@@ -417,31 +429,29 @@
       max-width: 1224px;
     
       .btn__commander__content {
-      width: 100%;
-      height: 90px;
-      margin: auto;
-      margin-bottom: 0px;
-      margin-top: 0px;
-      padding-top: 18px;
+         width: 100%;
+         height: 90px;
+         margin: auto;
+         margin-bottom: 0px;
+         margin-top: 0px;
+         padding-top: 18px;
       }
       
       .btn__commander {
-      display: inline-block;
-      width: 170px;
-      position: absolute;
-      @include btn-execusion;
-      padding: 10px 40px;
-      margin-top: 22px;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
-      transition: filter 1s;
+         display: inline-block;
+         width: 170px;
+         position: absolute;
+         @include btn-execusion;
+         padding: 10px 40px;
+         margin-top: 22px;
+         left: 50%;
+         right: 50%;
+         transform: translate(-50%, -50%);
+         transition: filter 1s;
       }
       .btn__commander:hover {
-        background:lighten($secondary-color, 0.1%);
-        filter: drop-shadow(0px 12px 6px rgb(39, 39, 39));
+         background:lighten($secondary-color, 0.1%);
+         filter: drop-shadow(0px 12px 6px rgb(39, 39, 39));
       }
   }
   }
-
-  

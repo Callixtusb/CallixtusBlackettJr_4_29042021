@@ -113,12 +113,6 @@ header .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: -40px;
 }
 
@@ -135,10 +129,10 @@ header .header__content {
   position: relative;
   right: -.05px;
   top: 19px;
-  color: #FF79DA;
+  color: #9356DC;
   opacity: 0;
-  -webkit-transition: All 3s;
-  transition: All 3s;
+  -webkit-transition: All 2s;
+  transition: All 2s;
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--palette .heart_inline:hover .heart-filled:before {
@@ -162,24 +156,27 @@ header .header__content {
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--palette {
-    position: absolute;
-    left: 60px;
+    position: relative;
+    width: 100%;
+    left: 35px;
+  }
+  .menu__wrapper .menu__title-and-heart-bloc--palette .spacing {
+    width: 100%;
   }
   .menu__wrapper .menu__title-and-heart-bloc--palette .heart_inline {
     width: 30px;
-    position: absolute;
-    left: 220px;
+    position: relative;
     top: 12px;
   }
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--palette .heart_inline--palette {
-  left: 270px;
+  left: 91%;
 }
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--palette .heart_inline--palette {
-    left: 270px;
+    left: -4%;
   }
 }
 
@@ -187,12 +184,6 @@ header .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: -40px;
 }
 
@@ -209,10 +200,10 @@ header .header__content {
   position: relative;
   right: -.05px;
   top: 19px;
-  color: #FF79DA;
+  color: #9356DC;
   opacity: 0;
-  -webkit-transition: All 3s;
-  transition: All 3s;
+  -webkit-transition: All 2s;
+  transition: All 2s;
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--enchantee .heart_inline:hover .heart-filled:before {
@@ -236,24 +227,27 @@ header .header__content {
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--enchantee {
-    position: absolute;
-    left: 60px;
+    position: relative;
+    width: 100%;
+    left: 35px;
+  }
+  .menu__wrapper .menu__title-and-heart-bloc--enchantee .spacing {
+    width: 100%;
   }
   .menu__wrapper .menu__title-and-heart-bloc--enchantee .heart_inline {
     width: 30px;
-    position: absolute;
-    left: 220px;
+    position: relative;
     top: 12px;
   }
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--enchantee .heart_inline--enchantee {
-  left: 290px;
+  left: 92%;
 }
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--enchantee .heart_inline--enchantee {
-    left: 260px;
+    left: -4%;
   }
 }
 
@@ -261,12 +255,6 @@ header .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: -40px;
 }
 
@@ -283,10 +271,10 @@ header .header__content {
   position: relative;
   right: -.05px;
   top: 19px;
-  color: #FF79DA;
+  color: #9356DC;
   opacity: 0;
-  -webkit-transition: All 3s;
-  transition: All 3s;
+  -webkit-transition: All 2s;
+  transition: All 2s;
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--francaise .heart_inline:hover .heart-filled:before {
@@ -310,24 +298,27 @@ header .header__content {
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--francaise {
-    position: absolute;
-    left: 60px;
+    position: relative;
+    width: 100%;
+    left: 35px;
+  }
+  .menu__wrapper .menu__title-and-heart-bloc--francaise .spacing {
+    width: 100%;
   }
   .menu__wrapper .menu__title-and-heart-bloc--francaise .heart_inline {
     width: 30px;
-    position: absolute;
-    left: 220px;
+    position: relative;
     top: 12px;
   }
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--francaise .heart_inline--francaise {
-  left: 260px;
+  left: 92%;
 }
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--francaise .heart_inline--francaise {
-    left: 230px;
+    left: -4%;
   }
 }
 
@@ -335,12 +326,6 @@ header .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: -40px;
 }
 
@@ -357,10 +342,10 @@ header .header__content {
   position: relative;
   right: -.05px;
   top: 19px;
-  color: #FF79DA;
+  color: #9356DC;
   opacity: 0;
-  -webkit-transition: All 3s;
-  transition: All 3s;
+  -webkit-transition: All 2s;
+  transition: All 2s;
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--delice .heart_inline:hover .heart-filled:before {
@@ -384,24 +369,27 @@ header .header__content {
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--delice {
-    position: absolute;
-    left: 60px;
+    position: relative;
+    width: 100%;
+    left: 35px;
+  }
+  .menu__wrapper .menu__title-and-heart-bloc--delice .spacing {
+    width: 100%;
   }
   .menu__wrapper .menu__title-and-heart-bloc--delice .heart_inline {
     width: 30px;
-    position: absolute;
-    left: 220px;
+    position: relative;
     top: 12px;
   }
 }
 
 .menu__wrapper .menu__title-and-heart-bloc--delice .heart_inline--delice {
-  left: 260px;
+  left: 92%;
 }
 
 @media screen and (min-width: 768px) {
   .menu__wrapper .menu__title-and-heart-bloc--delice .heart_inline--delice {
-    left: 230px;
+    left: -4%;
   }
 }
 
@@ -424,7 +412,7 @@ header .header__content {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0px;
-  margin-top: 2px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
