@@ -627,15 +627,12 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-.title_text {
-    max-width: 600px;
-    margin: auto;
-}
+
 
 .title_text2 {
     max-width: 350px;
     margin: auto;
-    font-size: 22px;
+    
 }
 
 .avis_text {
@@ -706,6 +703,12 @@ p {
     text-decoration: none;
 }
 
+.text-sz {
+    font-size: 15px;
+   
+}
+
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -735,8 +738,10 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
+    max-width: 600px;
+    margin: auto;
 }
 
 .text-size  {
@@ -766,7 +771,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #303030!important;
 }
 
 .portfolio-thumb {
@@ -783,14 +788,15 @@ h4 {
 }
 
 .black-background {
-    background-color: rgb(165 147 99);
+    background-color: #E9A976;
     padding: 40px 40px 40px 40px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .bold-link {
     font-weight: 900;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .bgc-white {
@@ -820,7 +826,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #303030!important;
 }
 
 .ltc-white:hover {
