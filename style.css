@@ -45,7 +45,10 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .bloc-md {
@@ -653,14 +656,19 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
-p,
 label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
+    color: #575757!important;
+    text-decoration: none;
+}
+
+h5 {
+    font-family: "helvetica";
+    font-weight: 600;
     color: #575757!important;
     text-decoration: none;
 }
@@ -689,6 +697,10 @@ a {
 
 p {
     font-size: 11px;
+    font-family: "helvetica";
+    font-weight: 400;
+    color: #575757!important;
+    text-decoration: none;
 }
 
 .tight-width-whitespace {
@@ -745,6 +757,9 @@ h4 {
     color: #333333!important;
 }
 
+
+
+
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
@@ -768,7 +783,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(165 147 99);
     padding: 40px 40px 40px 40px;
 }
 
@@ -800,7 +815,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #85736C!important;
     color: #FFFFFF!important;
 }
 
@@ -841,6 +856,7 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+    background-blend-mode: screen;
 }
 
 @media (max-width: 1024px) {
