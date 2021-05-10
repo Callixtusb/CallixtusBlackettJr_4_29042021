@@ -666,7 +666,9 @@ a {
     text-decoration: none;
 }
 
-h5 {
+.text-title-prtf {
+    font-size: 18px;
+    text-transform: uppercase;
     font-family: "helvetica";
     font-weight: 600;
     color: #575757!important;
@@ -679,6 +681,7 @@ h5 {
 
 .hero-bloc-text {
     font-size: 38px;
+    margin-top: 20px;
 }
 
 .hero-bloc-text-sub {
@@ -736,7 +739,7 @@ h2 {
     line-height: 1.4em;
 }
 
-h3 {
+.text-size  {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
@@ -756,9 +759,6 @@ h1 {
 h4 {
     color: #333333!important;
 }
-
-
-
 
 .icons {
     margin-bottom: 14px;
