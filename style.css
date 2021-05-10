@@ -705,9 +705,12 @@ p {
 
 .text-sz {
     font-size: 15px;
-   
 }
 
+.text-sz-footer {
+    color: #FFFFFF;
+    font-size: 11px;
+}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -848,7 +851,7 @@ h4 {
 
 .bg-dots-bg {
     background-image: url("img/dots-bg.jpg");
-    background-blend-mode: multiply;
+    background-blend-mode: soft-light;
 }
 
 .bg-lines-h2-bg {
