@@ -681,6 +681,11 @@ a {
     margin-top: 20px;
 }
 
+.hero-bloc-text-title {
+    font-size: 38px;
+    color: white;
+}
+
 .hero-bloc-text-sub {
     font-size: 36px;
 }
@@ -709,7 +714,7 @@ p {
 
 .text-sz-footer {
     color: #FFFFFF;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -814,7 +819,7 @@ h4 {
     background-color: #956E5D;
 }
 
-.tc-white {
+.tc-grey {
     color: #303030!important;
 }
 
@@ -849,10 +854,12 @@ h4 {
     border-color: #364577!important;
 }
 
+/*
 .bg-dots-bg {
     background-image: url("img/dots-bg.jpg");
     background-blend-mode: soft-light;
 }
+*/
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.jpg");
