@@ -18,6 +18,8 @@ a:hover {
   cursor: pointer;
 }
 
+
+
 #page-loading-blocs-notifaction {
   position: fixed;
   top: 0;
@@ -653,13 +655,21 @@ h3,
 h4,
 h6,
 label,
-.btn,
 a {
   font-family: "helvetica";
   font-weight: 400;
   color: #575757 !important;
   text-decoration: none;
 }
+
+
+.btn {
+  font-family: "helvetica";
+  font-weight: 400;
+  color: #fcf9f9 !important;
+  text-decoration: none;
+}
+
 
 .text-title-prtf {
   font-size: 18px;
