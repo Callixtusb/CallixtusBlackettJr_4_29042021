@@ -1414,7 +1414,7 @@ a:hover {
 
 a:focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 1px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
 
@@ -3122,7 +3122,7 @@ input[type=file]:focus,
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: 1px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
 
